@@ -1,0 +1,20 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Microcontroller",
+            "type": "cortex-debug",
+            "request": "attach",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/_build/nrf52832_xxaa.out",            
+            "servertype": "openocd",
+            "configFiles": [
+                "C:/Work/openocd-0.10.0/share/openocd/scripts/interface/stlink.cfg",
+                "C:/Work/openocd-0.10.0/share/openocd/scripts/target/nrf52.cfg"
+            ]
+        }
+    ]
+}
