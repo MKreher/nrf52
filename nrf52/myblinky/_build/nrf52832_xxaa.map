@@ -29,6 +29,9 @@ Allocating common symbols
 Common symbol       size              file
 
 nrf_nvic_state      0xc               _build/nrf52832_xxaa/app_util_platform.c.o
+m_pwm_ready_counter
+                    0xa               _build/nrf52832_xxaa/app_pwm.c.o
+m_pwm_PWM1_cb       0x24              _build/nrf52832_xxaa/main.c.o
 
 Discarded input sections
 
@@ -39,6 +42,10 @@ Discarded input sections
  .data          0x00000000        0x0 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
  .bss           0x00000000        0x0 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
  .ARM.extab     0x00000000        0x0 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/main.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/main.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/main.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/main.c.o
  .group         0x00000000        0xc _build/nrf52832_xxaa/main.c.o
  .group         0x00000000        0xc _build/nrf52832_xxaa/main.c.o
  .group         0x00000000        0xc _build/nrf52832_xxaa/main.c.o
@@ -1137,6 +1144,163 @@ Discarded input sections
  .debug_frame   0x00000000       0x2c _build/nrf52832_xxaa/nrf_assert.c.o
  .ARM.attributes
                 0x00000000       0x39 _build/nrf52832_xxaa/nrf_assert.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/app_pwm.c.o
+ .text          0x00000000        0x0 _build/nrf52832_xxaa/app_pwm.c.o
+ .data          0x00000000        0x0 _build/nrf52832_xxaa/app_pwm.c.o
+ .bss           0x00000000        0x0 _build/nrf52832_xxaa/app_pwm.c.o
+ .text.app_pwm_busy_check
+                0x00000000       0x4c _build/nrf52832_xxaa/app_pwm.c.o
+ .text.app_pwm_channel_duty_ticks_get
+                0x00000000       0x10 _build/nrf52832_xxaa/app_pwm.c.o
+ .text.app_pwm_cycle_ticks_get
+                0x00000000        0x8 _build/nrf52832_xxaa/app_pwm.c.o
+ .text.app_pwm_channel_duty_get
+                0x00000000       0x1c _build/nrf52832_xxaa/app_pwm.c.o
+ .text.app_pwm_disable
+                0x00000000       0x70 _build/nrf52832_xxaa/app_pwm.c.o
+ .text.app_pwm_uninit
+                0x00000000      0x128 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000      0xa8a _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x56 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x51 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0xef _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x6a _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000      0x1df _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x5e _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x18 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x35 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x34 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000      0x16d _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x58 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x1f _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x43 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x20 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000      0x18e _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000      0x353 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x35 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000     0x21b5 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000      0x16d _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x2e _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x9a _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0xa7 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x2d _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x3b _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x50 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000      0xe66 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000      0x392 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000     0xccbe _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000     0x1313 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x82 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000      0x7ae _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x4e _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000      0x3a3 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x3d _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000      0xe7b _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000      0x125 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x3f _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x46 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0xa3 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x3a _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x1c _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0xb6 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000      0x129 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x49 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x8c _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x19 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x40 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x20 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x94 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x88 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x28 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00000000       0x25 _build/nrf52832_xxaa/app_pwm.c.o
  .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_atomic.c.o
  .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_atomic.c.o
  .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_atomic.c.o
@@ -2092,6 +2256,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x20 _build/nrf52832_xxaa/app_button.c.o
  .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/app_button.c.o
  .debug_macro   0x00000000       0x25 _build/nrf52832_xxaa/app_button.c.o
+ .debug_macro   0x00000000       0x44 _build/nrf52832_xxaa/app_button.c.o
+ .debug_macro   0x00000000       0xcc _build/nrf52832_xxaa/app_button.c.o
  .group         0x00000000        0xc _build/nrf52832_xxaa/app_timer.c.o
  .group         0x00000000        0xc _build/nrf52832_xxaa/app_timer.c.o
  .group         0x00000000        0xc _build/nrf52832_xxaa/app_timer.c.o
@@ -2819,28 +2985,16 @@ Discarded input sections
  .bss           0x00000000        0x0 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .text.nrfx_gpiote_uninit
                 0x00000000      0x10c _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .text.nrfx_gpiote_out_init
-                0x00000000      0x108 _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .text.nrfx_gpiote_out_uninit
-                0x00000000       0x64 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .text.nrfx_gpiote_out_set
                 0x00000000       0x10 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .text.nrfx_gpiote_out_clear
                 0x00000000       0x10 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .text.nrfx_gpiote_out_toggle
                 0x00000000       0x20 _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .text.nrfx_gpiote_out_task_enable
-                0x00000000       0x24 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .text.nrfx_gpiote_out_task_disable
                 0x00000000       0x24 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .text.nrfx_gpiote_out_task_addr_get
                 0x00000000       0x1c _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .text.nrfx_gpiote_set_task_addr_get
-                0x00000000       0x1c _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .text.nrfx_gpiote_clr_task_addr_get
-                0x00000000       0x1c _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .text.nrfx_gpiote_out_task_force
-                0x00000000       0x30 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .text.nrfx_gpiote_out_task_trigger
                 0x00000000       0x20 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .text.nrfx_gpiote_set_task_trigger
@@ -2913,6 +3067,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x40 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .debug_macro   0x00000000       0x20 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .debug_macro   0x00000000       0x25 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_macro   0x00000000       0x1c _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .debug_macro   0x00000000       0x44 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_gpiote.c.o
@@ -3393,6 +3548,455 @@ Discarded input sections
  .debug_macro   0x00000000       0x55 _build/nrf52832_xxaa/nrf_drv_clock.c.o
  .debug_macro   0x00000000      0x17f _build/nrf52832_xxaa/nrf_drv_clock.c.o
  .debug_macro   0x00000000       0x9a _build/nrf52832_xxaa/nrf_drv_clock.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .text          0x00000000        0x0 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .data          0x00000000        0x0 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .bss           0x00000000        0x0 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .text.nrf_drv_ppi_uninit
+                0x00000000       0x1c _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000      0xa8a _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000     0x21b5 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x56 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x51 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0xef _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x6a _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000      0x1df _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000      0x16d _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x2d _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x3b _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x50 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000      0xe66 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000      0x392 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000     0xccbe _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000     0x1313 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x82 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000      0x3a3 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x3d _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000      0xe7b _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000      0x125 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000      0x16d _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000      0x7ae _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x3f _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x9a _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x46 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0xa3 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x3a _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x5e _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x18 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x35 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x34 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x35 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000      0x353 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x58 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x1f _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x43 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x20 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000      0x18e _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0xb6 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000      0x129 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0xa7 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x49 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x8c _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x19 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x7b _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x40 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x20 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x00000000       0x88 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .text          0x00000000        0x0 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .data          0x00000000        0x0 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .bss           0x00000000        0x0 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .text.nrfx_ppi_free_all
+                0x00000000       0x54 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .text.nrfx_ppi_channel_fork_assign
+                0x00000000       0x30 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .text.nrfx_ppi_group_alloc
+                0x00000000       0x74 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .text.nrfx_ppi_group_free
+                0x00000000       0x58 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .text.nrfx_ppi_group_enable
+                0x00000000       0x30 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .text.nrfx_ppi_group_disable
+                0x00000000       0x20 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .text.nrfx_ppi_channels_remove_from_group
+                0x00000000       0x60 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .text.nrfx_ppi_channels_include_in_group
+                0x00000000       0x60 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .bss.m_groups_allocated
+                0x00000000        0x1 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0xa8a _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000     0x21b5 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x56 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x51 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0xef _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x6a _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0x1df _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0x16d _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x2d _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x3b _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x50 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0xe66 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0x392 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000     0xccbe _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000     0x1313 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x82 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0x3a3 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x3d _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0xe7b _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0x125 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0x16d _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0x7ae _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x3f _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x9a _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x46 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0xa3 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x3a _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x5e _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x18 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x35 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x34 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x35 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0x353 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x58 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x1f _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x43 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x20 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0x18e _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0xb6 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0x129 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0xa7 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x49 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x8c _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x19 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x7b _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x40 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x20 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x1c _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x54 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x37 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x55 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000      0x17f _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x9a _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x00000000       0x42 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .group         0x00000000        0xc _build/nrf52832_xxaa/nrfx_timer.c.o
+ .text          0x00000000        0x0 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .data          0x00000000        0x0 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .bss           0x00000000        0x0 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .text.nrfx_timer_disable
+                0x00000000       0x1c _build/nrf52832_xxaa/nrfx_timer.c.o
+ .text.nrfx_timer_is_enabled
+                0x00000000       0x20 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .text.nrfx_timer_resume
+                0x00000000        0x8 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .text.nrfx_timer_pause
+                0x00000000        0x8 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .text.nrfx_timer_increment
+                0x00000000        0x8 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .text.nrfx_timer_capture
+                0x00000000       0x20 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0xa8a _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000     0x21b5 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x56 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x51 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0xef _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x6a _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0x1df _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0x16d _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x2d _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x3b _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x50 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0xe66 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0x392 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000     0xccbe _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000     0x1313 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x82 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0x3a3 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x3d _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0xe7b _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0x125 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0x16d _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0x7ae _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x3f _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x9a _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x46 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0xa3 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x3a _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x5e _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x18 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x35 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x34 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x35 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0x353 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x58 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x1f _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x43 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x20 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0x18e _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0xb6 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0x129 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0xa7 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x49 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x8c _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x19 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x7b _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x40 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x20 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x1c _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x16 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x22 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x54 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x37 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x10 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x55 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000      0x17f _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x9a _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_macro   0x00000000       0x42 _build/nrf52832_xxaa/nrfx_timer.c.o
  .text          0x00000000        0x0 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-exit.o)
  .data          0x00000000        0x0 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-exit.o)
  .bss           0x00000000        0x0 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-exit.o)
@@ -3492,7 +4096,7 @@ RAM              0x200057b8         0x0000a848         xrw
 Linker script and memory map
 
 
-.text           0x00026000     0x2394
+.text           0x00026000     0x34b0
  *(.isr_vector)
  .isr_vector    0x00026000      0x200 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
                 0x00026000                __isr_vector
@@ -3501,225 +4105,307 @@ Linker script and memory map
  .text          0x00026240       0x74 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
                 0x00026240                _start
                 0x00026240                _mainCRTStartup
+ .text.pwm_ready_callback
+                0x000262b4        0xc _build/nrf52832_xxaa/main.c.o
+                0x000262b4                pwm_ready_callback
  .text.button_event_handler
-                0x000262b4       0x20 _build/nrf52832_xxaa/main.c.o
+                0x000262c0       0x20 _build/nrf52832_xxaa/main.c.o
  .text.startup.main
-                0x000262d4       0xb4 _build/nrf52832_xxaa/main.c.o
-                0x000262d4                main
+                0x000262e0      0x130 _build/nrf52832_xxaa/main.c.o
+                0x000262e0                main
  .text.log_skip
-                0x00026388       0xd4 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+                0x00026410       0xd4 _build/nrf52832_xxaa/nrf_log_frontend.c.o
  .text.nrf_log_frontend_dequeue.part.6
-                0x0002645c      0x374 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+                0x000264e4      0x374 _build/nrf52832_xxaa/nrf_log_frontend.c.o
  .text.nrf_log_frontend_std_0
-                0x000267d0      0x100 _build/nrf52832_xxaa/nrf_log_frontend.c.o
-                0x000267d0                nrf_log_frontend_std_0
+                0x00026858      0x100 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+                0x00026858                nrf_log_frontend_std_0
  .text.nrf_log_frontend_dequeue
-                0x000268d0       0x18 _build/nrf52832_xxaa/nrf_log_frontend.c.o
-                0x000268d0                nrf_log_frontend_dequeue
+                0x00026958       0x18 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+                0x00026958                nrf_log_frontend_dequeue
  .text.nrf_log_panic
-                0x000268e8       0x2c _build/nrf52832_xxaa/nrf_log_frontend.c.o
-                0x000268e8                nrf_log_panic
+                0x00026970       0x2c _build/nrf52832_xxaa/nrf_log_frontend.c.o
+                0x00026970                nrf_log_panic
  .text.app_error_handler_bare
-                0x00026914       0x20 _build/nrf52832_xxaa/app_error.c.o
-                0x00026914                app_error_handler_bare
+                0x0002699c       0x20 _build/nrf52832_xxaa/app_error.c.o
+                0x0002699c                app_error_handler_bare
  .text.app_error_fault_handler
-                0x00026934       0x70 _build/nrf52832_xxaa/app_error_weak.c.o
-                0x00026934                app_error_fault_handler
+                0x000269bc       0x70 _build/nrf52832_xxaa/app_error_weak.c.o
+                0x000269bc                app_error_fault_handler
  .text.app_util_critical_region_enter
-                0x000269a4       0x4c _build/nrf52832_xxaa/app_util_platform.c.o
-                0x000269a4                app_util_critical_region_enter
+                0x00026a2c       0x4c _build/nrf52832_xxaa/app_util_platform.c.o
+                0x00026a2c                app_util_critical_region_enter
  .text.app_util_critical_region_exit
-                0x000269f0       0x30 _build/nrf52832_xxaa/app_util_platform.c.o
-                0x000269f0                app_util_critical_region_exit
+                0x00026a78       0x30 _build/nrf52832_xxaa/app_util_platform.c.o
+                0x00026a78                app_util_critical_region_exit
+ .text.pwm_ready_tick
+                0x00026aa8       0x5c _build/nrf52832_xxaa/app_pwm.c.o
+                0x00026aa8                pwm_ready_tick
+ .text.app_pwm_channel_duty_ticks_set
+                0x00026b04      0x1b4 _build/nrf52832_xxaa/app_pwm.c.o
+                0x00026b04                app_pwm_channel_duty_ticks_set
+ .text.app_pwm_channel_duty_set
+                0x00026cb8      0x1d4 _build/nrf52832_xxaa/app_pwm.c.o
+                0x00026cb8                app_pwm_channel_duty_set
+ .text.app_pwm_init
+                0x00026e8c      0x578 _build/nrf52832_xxaa/app_pwm.c.o
+                0x00026e8c                app_pwm_init
+ .text.app_pwm_enable
+                0x00027404       0x80 _build/nrf52832_xxaa/app_pwm.c.o
+                0x00027404                app_pwm_enable
  .text.nrf_atomic_u32_fetch_store
-                0x00026a20       0x14 _build/nrf52832_xxaa/nrf_atomic.c.o
-                0x00026a20                nrf_atomic_u32_fetch_store
+                0x00027484       0x14 _build/nrf52832_xxaa/nrf_atomic.c.o
+                0x00027484                nrf_atomic_u32_fetch_store
  .text.nrf_atomic_u32_add
-                0x00026a34       0x18 _build/nrf52832_xxaa/nrf_atomic.c.o
-                0x00026a34                nrf_atomic_u32_add
+                0x00027498       0x18 _build/nrf52832_xxaa/nrf_atomic.c.o
+                0x00027498                nrf_atomic_u32_add
  .text.nrf_atomic_u32_sub
-                0x00026a4c       0x18 _build/nrf52832_xxaa/nrf_atomic.c.o
-                0x00026a4c                nrf_atomic_u32_sub
+                0x000274b0       0x18 _build/nrf52832_xxaa/nrf_atomic.c.o
+                0x000274b0                nrf_atomic_u32_sub
  .text.nrf_atomic_flag_set
-                0x00026a64       0x18 _build/nrf52832_xxaa/nrf_atomic.c.o
-                0x00026a64                nrf_atomic_flag_set
+                0x000274c8       0x18 _build/nrf52832_xxaa/nrf_atomic.c.o
+                0x000274c8                nrf_atomic_flag_set
  .text.nrf_atomic_flag_clear_fetch
-                0x00026a7c       0x18 _build/nrf52832_xxaa/nrf_atomic.c.o
-                0x00026a7c                nrf_atomic_flag_clear_fetch
+                0x000274e0       0x18 _build/nrf52832_xxaa/nrf_atomic.c.o
+                0x000274e0                nrf_atomic_flag_clear_fetch
  .text.nrf_balloc_alloc
-                0x00026a94       0x50 _build/nrf52832_xxaa/nrf_balloc.c.o
-                0x00026a94                nrf_balloc_alloc
+                0x000274f8       0x50 _build/nrf52832_xxaa/nrf_balloc.c.o
+                0x000274f8                nrf_balloc_alloc
  .text.nrf_balloc_free
-                0x00026ae4       0x38 _build/nrf52832_xxaa/nrf_balloc.c.o
-                0x00026ae4                nrf_balloc_free
+                0x00027548       0x38 _build/nrf52832_xxaa/nrf_balloc.c.o
+                0x00027548                nrf_balloc_free
  .text.nrf_memobj_alloc
-                0x00026b1c       0x84 _build/nrf52832_xxaa/nrf_memobj.c.o
-                0x00026b1c                nrf_memobj_alloc
+                0x00027580       0x84 _build/nrf52832_xxaa/nrf_memobj.c.o
+                0x00027580                nrf_memobj_alloc
  .text.nrf_memobj_get
-                0x00026ba0        0x8 _build/nrf52832_xxaa/nrf_memobj.c.o
-                0x00026ba0                nrf_memobj_get
+                0x00027604        0x8 _build/nrf52832_xxaa/nrf_memobj.c.o
+                0x00027604                nrf_memobj_get
  .text.nrf_memobj_put
-                0x00026ba8       0x44 _build/nrf52832_xxaa/nrf_memobj.c.o
-                0x00026ba8                nrf_memobj_put
+                0x0002760c       0x44 _build/nrf52832_xxaa/nrf_memobj.c.o
+                0x0002760c                nrf_memobj_put
  .text.nrf_memobj_write
-                0x00026bec       0x68 _build/nrf52832_xxaa/nrf_memobj.c.o
-                0x00026bec                nrf_memobj_write
+                0x00027650       0x68 _build/nrf52832_xxaa/nrf_memobj.c.o
+                0x00027650                nrf_memobj_write
  .text.nrf_section_iter_init
-                0x00026c54       0x14 _build/nrf52832_xxaa/nrf_section_iter.c.o
-                0x00026c54                nrf_section_iter_init
+                0x000276b8       0x14 _build/nrf52832_xxaa/nrf_section_iter.c.o
+                0x000276b8                nrf_section_iter_init
  .text.nrf_section_iter_next
-                0x00026c68       0x18 _build/nrf52832_xxaa/nrf_section_iter.c.o
-                0x00026c68                nrf_section_iter_next
+                0x000276cc       0x18 _build/nrf52832_xxaa/nrf_section_iter.c.o
+                0x000276cc                nrf_section_iter_next
  .text.detection_delay_timeout_handler
-                0x00026c80      0x120 _build/nrf52832_xxaa/app_button.c.o
+                0x000276e4      0x120 _build/nrf52832_xxaa/app_button.c.o
  .text.gpiote_event_handler
-                0x00026da0       0xa8 _build/nrf52832_xxaa/app_button.c.o
+                0x00027804       0xa8 _build/nrf52832_xxaa/app_button.c.o
  .text.app_button_init
-                0x00026e48       0xb0 _build/nrf52832_xxaa/app_button.c.o
-                0x00026e48                app_button_init
+                0x000278ac       0xb0 _build/nrf52832_xxaa/app_button.c.o
+                0x000278ac                app_button_init
  .text.app_button_enable
-                0x00026ef8       0x2c _build/nrf52832_xxaa/app_button.c.o
-                0x00026ef8                app_button_enable
+                0x0002795c       0x2c _build/nrf52832_xxaa/app_button.c.o
+                0x0002795c                app_button_enable
  .text.RTC1_IRQHandler
-                0x00026f24       0xa0 _build/nrf52832_xxaa/app_timer.c.o
-                0x00026f24                RTC1_IRQHandler
+                0x00027988       0xa0 _build/nrf52832_xxaa/app_timer.c.o
+                0x00027988                RTC1_IRQHandler
  .text.SWI0_EGU0_IRQHandler
-                0x00026fc4      0x394 _build/nrf52832_xxaa/app_timer.c.o
-                0x00026fc4                SWI0_EGU0_IRQHandler
+                0x00027a28      0x394 _build/nrf52832_xxaa/app_timer.c.o
+                0x00027a28                SWI0_EGU0_IRQHandler
  .text.app_timer_init
-                0x00027358       0xa8 _build/nrf52832_xxaa/app_timer.c.o
-                0x00027358                app_timer_init
+                0x00027dbc       0xa8 _build/nrf52832_xxaa/app_timer.c.o
+                0x00027dbc                app_timer_init
  .text.app_timer_create
-                0x00027400       0x24 _build/nrf52832_xxaa/app_timer.c.o
-                0x00027400                app_timer_create
+                0x00027e64       0x24 _build/nrf52832_xxaa/app_timer.c.o
+                0x00027e64                app_timer_create
  .text.app_timer_start
-                0x00027424       0xac _build/nrf52832_xxaa/app_timer.c.o
-                0x00027424                app_timer_start
+                0x00027e88       0xac _build/nrf52832_xxaa/app_timer.c.o
+                0x00027e88                app_timer_start
  .text.app_timer_stop
-                0x000274d0       0x74 _build/nrf52832_xxaa/app_timer.c.o
-                0x000274d0                app_timer_stop
+                0x00027f34       0x74 _build/nrf52832_xxaa/app_timer.c.o
+                0x00027f34                app_timer_stop
  .text.nrf_sdh_is_enabled
-                0x00027544        0xc _build/nrf52832_xxaa/nrf_sdh.c.o
-                0x00027544                nrf_sdh_is_enabled
+                0x00027fa8        0xc _build/nrf52832_xxaa/nrf_sdh.c.o
+                0x00027fa8                nrf_sdh_is_enabled
  .text.SWI2_EGU2_IRQHandler
-                0x00027550       0x2c _build/nrf52832_xxaa/nrf_sdh.c.o
-                0x00027550                SWI2_EGU2_IRQHandler
+                0x00027fb4       0x2c _build/nrf52832_xxaa/nrf_sdh.c.o
+                0x00027fb4                SWI2_EGU2_IRQHandler
  .text.sd_evt_get
-                0x0002757c        0x4 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+                0x00027fe0        0x4 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
  .text.nrf_sdh_soc_evts_poll
-                0x00027580       0x4c _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+                0x00027fe4       0x4c _build/nrf52832_xxaa/nrf_sdh_soc.c.o
  .text.SystemInit
-                0x000275cc      0x3c0 _build/nrf52832_xxaa/system_nrf52.c.o
-                0x000275cc                SystemInit
+                0x00028030      0x3c0 _build/nrf52832_xxaa/system_nrf52.c.o
+                0x00028030                SystemInit
  .text.nrfx_gpiote_init
-                0x0002798c       0x88 _build/nrf52832_xxaa/nrfx_gpiote.c.o
-                0x0002798c                nrfx_gpiote_init
+                0x000283f0       0x88 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x000283f0                nrfx_gpiote_init
  .text.nrfx_gpiote_is_init
-                0x00027a14       0x14 _build/nrf52832_xxaa/nrfx_gpiote.c.o
-                0x00027a14                nrfx_gpiote_is_init
+                0x00028478       0x14 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x00028478                nrfx_gpiote_is_init
+ .text.nrfx_gpiote_out_init
+                0x0002848c      0x108 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x0002848c                nrfx_gpiote_out_init
+ .text.nrfx_gpiote_out_uninit
+                0x00028594       0x64 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x00028594                nrfx_gpiote_out_uninit
+ .text.nrfx_gpiote_out_task_enable
+                0x000285f8       0x24 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x000285f8                nrfx_gpiote_out_task_enable
+ .text.nrfx_gpiote_set_task_addr_get
+                0x0002861c       0x1c _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x0002861c                nrfx_gpiote_set_task_addr_get
+ .text.nrfx_gpiote_clr_task_addr_get
+                0x00028638       0x1c _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x00028638                nrfx_gpiote_clr_task_addr_get
+ .text.nrfx_gpiote_out_task_force
+                0x00028654       0x30 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x00028654                nrfx_gpiote_out_task_force
  .text.nrfx_gpiote_in_init
-                0x00027a28      0x144 _build/nrf52832_xxaa/nrfx_gpiote.c.o
-                0x00027a28                nrfx_gpiote_in_init
+                0x00028684      0x144 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x00028684                nrfx_gpiote_in_init
  .text.nrfx_gpiote_in_event_enable
-                0x00027b6c       0xc4 _build/nrf52832_xxaa/nrfx_gpiote.c.o
-                0x00027b6c                nrfx_gpiote_in_event_enable
+                0x000287c8       0xc4 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x000287c8                nrfx_gpiote_in_event_enable
  .text.nrfx_gpiote_in_is_set
-                0x00027c30       0x14 _build/nrf52832_xxaa/nrfx_gpiote.c.o
-                0x00027c30                nrfx_gpiote_in_is_set
+                0x0002888c       0x14 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x0002888c                nrfx_gpiote_in_is_set
  .text.GPIOTE_IRQHandler
-                0x00027c44      0x2f0 _build/nrf52832_xxaa/nrfx_gpiote.c.o
-                0x00027c44                GPIOTE_IRQHandler
+                0x000288a0      0x2f0 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x000288a0                GPIOTE_IRQHandler
  .text.nrfx_clock_init
-                0x00027f34       0x1c _build/nrf52832_xxaa/nrfx_clock.c.o
-                0x00027f34                nrfx_clock_init
+                0x00028b90       0x1c _build/nrf52832_xxaa/nrfx_clock.c.o
+                0x00028b90                nrfx_clock_init
  .text.nrfx_clock_enable
-                0x00027f50       0x28 _build/nrf52832_xxaa/nrfx_clock.c.o
-                0x00027f50                nrfx_clock_enable
+                0x00028bac       0x28 _build/nrf52832_xxaa/nrfx_clock.c.o
+                0x00028bac                nrfx_clock_enable
  .text.nrfx_clock_lfclk_start
-                0x00027f78       0x60 _build/nrf52832_xxaa/nrfx_clock.c.o
-                0x00027f78                nrfx_clock_lfclk_start
+                0x00028bd4       0x60 _build/nrf52832_xxaa/nrfx_clock.c.o
+                0x00028bd4                nrfx_clock_lfclk_start
  .text.nrfx_clock_lfclk_stop
-                0x00027fd8       0x18 _build/nrf52832_xxaa/nrfx_clock.c.o
-                0x00027fd8                nrfx_clock_lfclk_stop
+                0x00028c34       0x18 _build/nrf52832_xxaa/nrfx_clock.c.o
+                0x00028c34                nrfx_clock_lfclk_stop
  .text.POWER_CLOCK_IRQHandler
-                0x00027ff0       0x64 _build/nrf52832_xxaa/nrfx_clock.c.o
-                0x00027ff0                POWER_CLOCK_IRQHandler
- .text          0x00028054       0x3c _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
-                0x00028054                Reset_Handler
-                0x0002807c                NMI_Handler
-                0x0002807e                HardFault_Handler
-                0x00028080                MemoryManagement_Handler
-                0x00028082                BusFault_Handler
-                0x00028084                UsageFault_Handler
-                0x00028086                SVC_Handler
-                0x00028088                DebugMon_Handler
-                0x0002808a                PendSV_Handler
-                0x0002808c                SysTick_Handler
-                0x0002808e                TEMP_IRQHandler
-                0x0002808e                QDEC_IRQHandler
-                0x0002808e                TIMER3_IRQHandler
-                0x0002808e                FPU_IRQHandler
-                0x0002808e                SPIM0_SPIS0_TWIM0_TWIS0_SPI0_TWI0_IRQHandler
-                0x0002808e                PDM_IRQHandler
-                0x0002808e                UARTE0_UART0_IRQHandler
-                0x0002808e                TIMER4_IRQHandler
-                0x0002808e                I2S_IRQHandler
-                0x0002808e                SWI4_EGU4_IRQHandler
-                0x0002808e                TIMER0_IRQHandler
-                0x0002808e                RADIO_IRQHandler
-                0x0002808e                RTC0_IRQHandler
-                0x0002808e                PWM2_IRQHandler
-                0x0002808e                ECB_IRQHandler
-                0x0002808e                SPIM1_SPIS1_TWIM1_TWIS1_SPI1_TWI1_IRQHandler
-                0x0002808e                Default_Handler
-                0x0002808e                SAADC_IRQHandler
-                0x0002808e                CCM_AAR_IRQHandler
-                0x0002808e                WDT_IRQHandler
-                0x0002808e                PWM1_IRQHandler
-                0x0002808e                SWI5_EGU5_IRQHandler
-                0x0002808e                RNG_IRQHandler
-                0x0002808e                RTC2_IRQHandler
-                0x0002808e                PWM0_IRQHandler
-                0x0002808e                SWI3_EGU3_IRQHandler
-                0x0002808e                SWI1_EGU1_IRQHandler
-                0x0002808e                SPIM2_SPIS2_SPI2_IRQHandler
-                0x0002808e                NFCT_IRQHandler
-                0x0002808e                TIMER1_IRQHandler
-                0x0002808e                MWU_IRQHandler
-                0x0002808e                TIMER2_IRQHandler
-                0x0002808e                COMP_LPCOMP_IRQHandler
+                0x00028c4c       0x64 _build/nrf52832_xxaa/nrfx_clock.c.o
+                0x00028c4c                POWER_CLOCK_IRQHandler
+ .text          0x00028cb0       0x3c _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
+                0x00028cb0                Reset_Handler
+                0x00028cd8                NMI_Handler
+                0x00028cda                HardFault_Handler
+                0x00028cdc                MemoryManagement_Handler
+                0x00028cde                BusFault_Handler
+                0x00028ce0                UsageFault_Handler
+                0x00028ce2                SVC_Handler
+                0x00028ce4                DebugMon_Handler
+                0x00028ce6                PendSV_Handler
+                0x00028ce8                SysTick_Handler
+                0x00028cea                TEMP_IRQHandler
+                0x00028cea                QDEC_IRQHandler
+                0x00028cea                TIMER3_IRQHandler
+                0x00028cea                FPU_IRQHandler
+                0x00028cea                SPIM0_SPIS0_TWIM0_TWIS0_SPI0_TWI0_IRQHandler
+                0x00028cea                PDM_IRQHandler
+                0x00028cea                UARTE0_UART0_IRQHandler
+                0x00028cea                TIMER4_IRQHandler
+                0x00028cea                I2S_IRQHandler
+                0x00028cea                SWI4_EGU4_IRQHandler
+                0x00028cea                RADIO_IRQHandler
+                0x00028cea                RTC0_IRQHandler
+                0x00028cea                ECB_IRQHandler
+                0x00028cea                SPIM1_SPIS1_TWIM1_TWIS1_SPI1_TWI1_IRQHandler
+                0x00028cea                Default_Handler
+                0x00028cea                SAADC_IRQHandler
+                0x00028cea                CCM_AAR_IRQHandler
+                0x00028cea                WDT_IRQHandler
+                0x00028cea                PWM1_IRQHandler
+                0x00028cea                SWI5_EGU5_IRQHandler
+                0x00028cea                RNG_IRQHandler
+                0x00028cea                RTC2_IRQHandler
+                0x00028cea                PWM0_IRQHandler
+                0x00028cea                SWI3_EGU3_IRQHandler
+                0x00028cea                SWI1_EGU1_IRQHandler
+                0x00028cea                SPIM2_SPIS2_SPI2_IRQHandler
+                0x00028cea                NFCT_IRQHandler
+                0x00028cea                PWM2_IRQHandler
+                0x00028cea                MWU_IRQHandler
+                0x00028cea                TIMER2_IRQHandler
+                0x00028cea                COMP_LPCOMP_IRQHandler
  .text.clock_irq_handler
-                0x00028090       0x44 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+                0x00028cec       0x44 _build/nrf52832_xxaa/nrf_drv_clock.c.o
  .text.soc_evt_handler
-                0x000280d4       0x28 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+                0x00028d30       0x28 _build/nrf52832_xxaa/nrf_drv_clock.c.o
  .text.sd_state_evt_handler
-                0x000280fc       0xa0 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+                0x00028d58       0xa0 _build/nrf52832_xxaa/nrf_drv_clock.c.o
  .text.nrf_drv_clock_init
-                0x0002819c       0x3c _build/nrf52832_xxaa/nrf_drv_clock.c.o
-                0x0002819c                nrf_drv_clock_init
+                0x00028df8       0x3c _build/nrf52832_xxaa/nrf_drv_clock.c.o
+                0x00028df8                nrf_drv_clock_init
  .text.nrf_drv_clock_lfclk_request
-                0x000281d8       0x6c _build/nrf52832_xxaa/nrf_drv_clock.c.o
-                0x000281d8                nrf_drv_clock_lfclk_request
- .text.exit     0x00028244       0x28 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-exit.o)
-                0x00028244                exit
+                0x00028e34       0x6c _build/nrf52832_xxaa/nrf_drv_clock.c.o
+                0x00028e34                nrf_drv_clock_lfclk_request
+ .text.nrf_drv_ppi_init
+                0x00028ea0       0x14 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+                0x00028ea0                nrf_drv_ppi_init
+ .text.nrfx_ppi_channel_alloc
+                0x00028eb4       0x78 _build/nrf52832_xxaa/nrfx_ppi.c.o
+                0x00028eb4                nrfx_ppi_channel_alloc
+ .text.nrfx_ppi_channel_free
+                0x00028f2c       0x48 _build/nrf52832_xxaa/nrfx_ppi.c.o
+                0x00028f2c                nrfx_ppi_channel_free
+ .text.nrfx_ppi_channel_assign
+                0x00028f74       0x4c _build/nrf52832_xxaa/nrfx_ppi.c.o
+                0x00028f74                nrfx_ppi_channel_assign
+ .text.nrfx_ppi_channel_enable
+                0x00028fc0       0x30 _build/nrf52832_xxaa/nrfx_ppi.c.o
+                0x00028fc0                nrfx_ppi_channel_enable
+ .text.nrfx_ppi_channel_disable
+                0x00028ff0       0x30 _build/nrf52832_xxaa/nrfx_ppi.c.o
+                0x00028ff0                nrfx_ppi_channel_disable
+ .text.nrfx_timer_init
+                0x00029020       0xfc _build/nrf52832_xxaa/nrfx_timer.c.o
+                0x00029020                nrfx_timer_init
+ .text.nrfx_timer_uninit
+                0x0002911c       0x5c _build/nrf52832_xxaa/nrfx_timer.c.o
+                0x0002911c                nrfx_timer_uninit
+ .text.nrfx_timer_enable
+                0x00029178       0x1c _build/nrf52832_xxaa/nrfx_timer.c.o
+                0x00029178                nrfx_timer_enable
+ .text.nrfx_timer_clear
+                0x00029194        0x8 _build/nrf52832_xxaa/nrfx_timer.c.o
+                0x00029194                nrfx_timer_clear
+ .text.nrfx_timer_compare
+                0x0002919c       0x3c _build/nrf52832_xxaa/nrfx_timer.c.o
+                0x0002919c                nrfx_timer_compare
+ .text.nrfx_timer_extended_compare
+                0x000291d8       0x60 _build/nrf52832_xxaa/nrfx_timer.c.o
+                0x000291d8                nrfx_timer_extended_compare
+ .text.nrfx_timer_compare_int_enable
+                0x00029238       0x30 _build/nrf52832_xxaa/nrfx_timer.c.o
+                0x00029238                nrfx_timer_compare_int_enable
+ .text.nrfx_timer_compare_int_disable
+                0x00029268       0x10 _build/nrf52832_xxaa/nrfx_timer.c.o
+                0x00029268                nrfx_timer_compare_int_disable
+ .text.TIMER0_IRQHandler
+                0x00029278       0x58 _build/nrf52832_xxaa/nrfx_timer.c.o
+                0x00029278                TIMER0_IRQHandler
+ .text.TIMER1_IRQHandler
+                0x000292d0       0x58 _build/nrf52832_xxaa/nrfx_timer.c.o
+                0x000292d0                TIMER1_IRQHandler
+ .text.exit     0x00029328       0x28 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-exit.o)
+                0x00029328                exit
  .text.__libc_init_array
-                0x0002826c       0x48 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
-                0x0002826c                __libc_init_array
- .text.memcpy   0x000282b4       0x16 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
-                0x000282b4                memcpy
- .text.memset   0x000282ca       0x10 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
-                0x000282ca                memset
- *fill*         0x000282da        0x2 
- .text._exit    0x000282dc        0x4 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
-                0x000282dc                _exit
+                0x00029350       0x48 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+                0x00029350                __libc_init_array
+ .text.memcpy   0x00029398       0x16 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+                0x00029398                memcpy
+ .text.memset   0x000293ae       0x10 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+                0x000293ae                memset
+ *fill*         0x000293be        0x2 
+ .text._exit    0x000293c0        0x4 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
+                0x000293c0                _exit
  *(.init)
- .init          0x000282e0        0x4 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x000282e0                _init
- .init          0x000282e4        0x8 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ .init          0x000293c4        0x4 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x000293c4                _init
+ .init          0x000293c8        0x8 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
  *(.fini)
- .fini          0x000282ec        0x4 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x000282ec                _fini
- .fini          0x000282f0        0x8 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ .fini          0x000293d0        0x4 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x000293d0                _fini
+ .fini          0x000293d4        0x8 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -3731,145 +4417,163 @@ Linker script and memory map
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.rodata*)
- .rodata.buttons.9702
-                0x000282f8        0x8 _build/nrf52832_xxaa/main.c.o
+ .rodata        0x000293dc       0x14 _build/nrf52832_xxaa/main.c.o
+ .rodata.PWM1   0x000293f0        0x8 _build/nrf52832_xxaa/main.c.o
+                0x000293f0                PWM1
+ .rodata.buttons.10012
+                0x000293f8        0x8 _build/nrf52832_xxaa/main.c.o
  .rodata.delay_bytecode.8570
-                0x00028300        0x6 _build/nrf52832_xxaa/main.c.o
- *fill*         0x00028306        0x2 
+                0x00029400        0x6 _build/nrf52832_xxaa/main.c.o
+ *fill*         0x00029406        0x2 
+ .rodata.m_pwm_PWM1_timer
+                0x00029408        0x8 _build/nrf52832_xxaa/main.c.o
+                0x00029408                m_pwm_PWM1_timer
  .rodata.nrf_log_frontend_dequeue.part.6.str1.4
-                0x00028308       0x11 _build/nrf52832_xxaa/nrf_log_frontend.c.o
- *fill*         0x00028319        0x3 
+                0x00029410       0x11 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ *fill*         0x00029421        0x3 
  .rodata.str1.4
-                0x0002831c        0x4 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+                0x00029424        0x4 _build/nrf52832_xxaa/nrf_log_frontend.c.o
  .rodata.app_error_fault_handler.str1.4
-                0x00028320       0x19 _build/nrf52832_xxaa/app_error_weak.c.o
- *fill*         0x00028339        0x3 
+                0x00029428       0x19 _build/nrf52832_xxaa/app_error_weak.c.o
+ *fill*         0x00029441        0x3 
  .rodata.m_detection_delay_timer_id
-                0x0002833c        0x4 _build/nrf52832_xxaa/app_button.c.o
+                0x00029444        0x4 _build/nrf52832_xxaa/app_button.c.o
+ *fill*         0x00029448        0x8 
  .rodata.delay_bytecode.8696
-                0x00028340        0x6 _build/nrf52832_xxaa/app_timer.c.o
- *fill*         0x00028346        0x2 
+                0x00029450        0x6 _build/nrf52832_xxaa/app_timer.c.o
+ *fill*         0x00029456        0x2 
  .rodata.sdh_stack_observers
-                0x00028348        0xc _build/nrf52832_xxaa/nrf_sdh.c.o
+                0x00029458        0xc _build/nrf52832_xxaa/nrf_sdh.c.o
  .rodata.str1.4
-                0x00028354        0x8 _build/nrf52832_xxaa/nrf_sdh.c.o
+                0x00029464        0x8 _build/nrf52832_xxaa/nrf_sdh.c.o
  .rodata.sdh_soc_observers
-                0x0002835c        0xc _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+                0x0002946c        0xc _build/nrf52832_xxaa/nrf_sdh_soc.c.o
  .rodata.str1.4
-                0x00028368        0xc _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+                0x00029478        0xc _build/nrf52832_xxaa/nrf_sdh_soc.c.o
  .rodata.str1.4
-                0x00028374        0x7 _build/nrf52832_xxaa/nrfx_gpiote.c.o
- *fill*         0x0002837b        0x1 
+                0x00029484        0x7 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ *fill*         0x0002948b        0x1 
  .rodata.str1.4
-                0x0002837c        0x6 _build/nrf52832_xxaa/nrfx_clock.c.o
- *fill*         0x00028382        0x2 
+                0x0002948c        0x6 _build/nrf52832_xxaa/nrfx_clock.c.o
+ *fill*         0x00029492        0x2 
  .rodata.str1.4
-                0x00028384        0x8 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+                0x00029494        0x6 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+ *fill*         0x0002949a        0x2 
+ .rodata.str1.4
+                0x0002949c        0x4 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .rodata.str1.4
+                0x000294a0        0x8 _build/nrf52832_xxaa/nrfx_timer.c.o
                                   0x6 (size before relaxing)
  .rodata._global_impure_ptr
-                0x0002838c        0x4 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-impure.o)
-                0x0002838c                _global_impure_ptr
+                0x000294a8        0x4 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-impure.o)
+                0x000294a8                _global_impure_ptr
  *(.eh_frame*)
- .eh_frame      0x00028390        0x0 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
- .eh_frame      0x00028390        0x4 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
+ .eh_frame      0x000294ac        0x0 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .eh_frame      0x000294ac        0x4 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
 
-.glue_7         0x00028394        0x0
- .glue_7        0x00028394        0x0 linker stubs
+.glue_7         0x000294b0        0x0
+ .glue_7        0x000294b0        0x0 linker stubs
 
-.glue_7t        0x00028394        0x0
- .glue_7t       0x00028394        0x0 linker stubs
+.glue_7t        0x000294b0        0x0
+ .glue_7t       0x000294b0        0x0 linker stubs
 
-.vfp11_veneer   0x00028394        0x0
- .vfp11_veneer  0x00028394        0x0 linker stubs
+.vfp11_veneer   0x000294b0        0x0
+ .vfp11_veneer  0x000294b0        0x0 linker stubs
 
-.v4_bx          0x00028394        0x0
- .v4_bx         0x00028394        0x0 linker stubs
+.v4_bx          0x000294b0        0x0
+ .v4_bx         0x000294b0        0x0 linker stubs
 
-.iplt           0x00028394        0x0
- .iplt          0x00028394        0x0 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.iplt           0x000294b0        0x0
+ .iplt          0x000294b0        0x0 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
 .mem_section_dummy_rom
 
 .sdh_soc_observers
-                0x00028394        0x8
-                0x00028394                PROVIDE (__start_sdh_soc_observers = .)
+                0x000294b0        0x8
+                0x000294b0                PROVIDE (__start_sdh_soc_observers = .)
  *(SORT_BY_NAME(.sdh_soc_observers*))
  .sdh_soc_observers0
-                0x00028394        0x8 _build/nrf52832_xxaa/nrf_drv_clock.c.o
-                0x0002839c                PROVIDE (__stop_sdh_soc_observers = .)
+                0x000294b0        0x8 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+                0x000294b8                PROVIDE (__stop_sdh_soc_observers = .)
 
 .sdh_state_observers
-                0x0002839c        0x8
-                0x0002839c                PROVIDE (__start_sdh_state_observers = .)
+                0x000294b8        0x8
+                0x000294b8                PROVIDE (__start_sdh_state_observers = .)
  *(SORT_BY_NAME(.sdh_state_observers*))
  .sdh_state_observers0
-                0x0002839c        0x8 _build/nrf52832_xxaa/nrf_drv_clock.c.o
-                0x000283a4                PROVIDE (__stop_sdh_state_observers = .)
+                0x000294b8        0x8 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+                0x000294c0                PROVIDE (__stop_sdh_state_observers = .)
 
 .sdh_stack_observers
-                0x000283a4        0x8
-                0x000283a4                PROVIDE (__start_sdh_stack_observers = .)
+                0x000294c0        0x8
+                0x000294c0                PROVIDE (__start_sdh_stack_observers = .)
  *(SORT_BY_NAME(.sdh_stack_observers*))
  .sdh_stack_observers0
-                0x000283a4        0x8 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
-                0x000283ac                PROVIDE (__stop_sdh_stack_observers = .)
+                0x000294c0        0x8 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+                0x000294c8                PROVIDE (__stop_sdh_stack_observers = .)
 
 .sdh_req_observers
-                0x000283ac        0x0
-                0x000283ac                PROVIDE (__start_sdh_req_observers = .)
+                0x000294c8        0x0
+                0x000294c8                PROVIDE (__start_sdh_req_observers = .)
  *(SORT_BY_NAME(.sdh_req_observers*))
-                0x000283ac                PROVIDE (__stop_sdh_req_observers = .)
+                0x000294c8                PROVIDE (__stop_sdh_req_observers = .)
 
 .log_const_data
-                0x000283ac       0x30
-                0x000283ac                PROVIDE (__start_log_const_data = .)
+                0x000294c8       0x40
+                0x000294c8                PROVIDE (__start_log_const_data = .)
  *(SORT_BY_NAME(.log_const_data*))
  .log_const_data_CLOCK
-                0x000283ac        0x8 _build/nrf52832_xxaa/nrfx_clock.c.o
-                0x000283ac                m_nrf_log_CLOCK_logs_data_const
+                0x000294c8        0x8 _build/nrf52832_xxaa/nrfx_clock.c.o
+                0x000294c8                m_nrf_log_CLOCK_logs_data_const
  .log_const_data_GPIOTE
-                0x000283b4        0x8 _build/nrf52832_xxaa/nrfx_gpiote.c.o
-                0x000283b4                m_nrf_log_GPIOTE_logs_data_const
+                0x000294d0        0x8 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x000294d0                m_nrf_log_GPIOTE_logs_data_const
+ .log_const_data_PPI
+                0x000294d8        0x8 _build/nrf52832_xxaa/nrfx_ppi.c.o
+                0x000294d8                m_nrf_log_PPI_logs_data_const
+ .log_const_data_TIMER
+                0x000294e0        0x8 _build/nrf52832_xxaa/nrfx_timer.c.o
+                0x000294e0                m_nrf_log_TIMER_logs_data_const
  .log_const_data_app
-                0x000283bc        0x8 _build/nrf52832_xxaa/nrf_log_frontend.c.o
-                0x000283bc                m_nrf_log_app_logs_data_const
+                0x000294e8        0x8 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+                0x000294e8                m_nrf_log_app_logs_data_const
  .log_const_data_clock
-                0x000283c4        0x8 _build/nrf52832_xxaa/nrf_drv_clock.c.o
-                0x000283c4                m_nrf_log_clock_logs_data_const
+                0x000294f0        0x8 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+                0x000294f0                m_nrf_log_clock_logs_data_const
  .log_const_data_nrf_sdh
-                0x000283cc        0x8 _build/nrf52832_xxaa/nrf_sdh.c.o
-                0x000283cc                m_nrf_log_nrf_sdh_logs_data_const
+                0x000294f8        0x8 _build/nrf52832_xxaa/nrf_sdh.c.o
+                0x000294f8                m_nrf_log_nrf_sdh_logs_data_const
  .log_const_data_nrf_sdh_soc
-                0x000283d4        0x8 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
-                0x000283d4                m_nrf_log_nrf_sdh_soc_logs_data_const
-                0x000283dc                PROVIDE (__stop_log_const_data = .)
+                0x00029500        0x8 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+                0x00029500                m_nrf_log_nrf_sdh_soc_logs_data_const
+                0x00029508                PROVIDE (__stop_log_const_data = .)
 
-.log_backends   0x000283dc        0x0
+.log_backends   0x00029508        0x0
                 [!provide]                PROVIDE (__start_log_backends = .)
  *(SORT_BY_NAME(.log_backends*))
                 [!provide]                PROVIDE (__stop_log_backends = .)
 
-.nrf_balloc     0x000283dc       0x14
+.nrf_balloc     0x00029508       0x14
                 [!provide]                PROVIDE (__start_nrf_balloc = .)
  *(.nrf_balloc)
- .nrf_balloc    0x000283dc       0x14 _build/nrf52832_xxaa/nrf_log_frontend.c.o
-                0x000283dc                log_mempool
+ .nrf_balloc    0x00029508       0x14 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+                0x00029508                log_mempool
                 [!provide]                PROVIDE (__stop_nrf_balloc = .)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000283f0                __exidx_start = .
+                0x0002951c                __exidx_start = .
 
-.ARM.exidx      0x000283f0        0x8
+.ARM.exidx      0x0002951c        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x000283f0        0x8 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
-                0x000283f8                __exidx_end = .
-                0x000283f8                __etext = .
+ .ARM.exidx     0x0002951c        0x8 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o
+                0x00029524                __exidx_end = .
+                0x00029524                __etext = .
 
-.rel.dyn        0x000283f8        0x0
- .rel.iplt      0x000283f8        0x0 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.rel.dyn        0x00029524        0x0
+ .rel.iplt      0x00029524        0x0 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.data           0x200057b8       0x6c load address 0x000283f8
+.data           0x200057b8       0x6c load address 0x00029524
                 0x200057b8                __data_start__ = .
  *(vtable)
  *(.data*)
@@ -3909,6 +4613,7 @@ LOAD _build/nrf52832_xxaa/app_error_handler_gcc.c.o
 LOAD _build/nrf52832_xxaa/app_error_weak.c.o
 LOAD _build/nrf52832_xxaa/app_util_platform.c.o
 LOAD _build/nrf52832_xxaa/nrf_assert.c.o
+LOAD _build/nrf52832_xxaa/app_pwm.c.o
 LOAD _build/nrf52832_xxaa/nrf_atomic.c.o
 LOAD _build/nrf52832_xxaa/nrf_balloc.c.o
 LOAD _build/nrf52832_xxaa/app_scheduler.c.o
@@ -3928,6 +4633,9 @@ LOAD _build/nrf52832_xxaa/nrfx_clock.c.o
 LOAD _build/nrf52832_xxaa/nrfx_power_clock.c.o
 LOAD _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
 LOAD _build/nrf52832_xxaa/nrf_drv_clock.c.o
+LOAD _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+LOAD _build/nrf52832_xxaa/nrfx_ppi.c.o
+LOAD _build/nrf52832_xxaa/nrfx_timer.c.o
 LOAD c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a
 LOAD c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a
 LOAD c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a
@@ -3948,7 +4656,7 @@ LOAD c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-ea
 LOAD c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a
 END GROUP
 
-.igot.plt       0x20005824        0x0 load address 0x00028464
+.igot.plt       0x20005824        0x0 load address 0x00029590
  .igot.plt      0x20005824        0x0 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
                 0x20005824                . = ALIGN (0x4)
 
@@ -3966,82 +4674,106 @@ END GROUP
  *(SORT_BY_NAME(.log_filter_data*))
                 [!provide]                PROVIDE (__stop_log_filter_data = .)
 
-.bss            0x20005828      0x6e8 load address 0x00028468
+.bss            0x20005828      0x770 load address 0x00029598
                 0x20005828                . = ALIGN (0x4)
                 0x20005828                __bss_start__ = .
  *(.bss*)
  .bss           0x20005828       0x1c c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .bss.ready_flag
+                0x20005844        0x1 _build/nrf52832_xxaa/main.c.o
+ *fill*         0x20005845        0x3 
  .bss.log_mempool_nrf_balloc_cb
-                0x20005844        0x8 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+                0x20005848        0x8 _build/nrf52832_xxaa/nrf_log_frontend.c.o
  .bss.log_mempool_nrf_balloc_pool_mem
-                0x2000584c       0xc0 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+                0x20005850       0xc0 _build/nrf52832_xxaa/nrf_log_frontend.c.o
  .bss.log_mempool_nrf_balloc_pool_stack
-                0x2000590c        0x8 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+                0x20005910        0x8 _build/nrf52832_xxaa/nrf_log_frontend.c.o
  .bss.m_log_data
-                0x20005914      0x424 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+                0x20005918      0x424 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .bss.m_instances
+                0x20005d3c       0x14 _build/nrf52832_xxaa/app_pwm.c.o
+ .bss.m_pwm_busy
+                0x20005d50        0x5 _build/nrf52832_xxaa/app_pwm.c.o
+ *fill*         0x20005d55        0x3 
+ .bss.m_pwm_target_value
+                0x20005d58       0x14 _build/nrf52832_xxaa/app_pwm.c.o
+ .bss.m_use_ppi_delay_workaround
+                0x20005d6c        0x1 _build/nrf52832_xxaa/app_pwm.c.o
  .bss.m_button_count
-                0x20005d38        0x1 _build/nrf52832_xxaa/app_button.c.o
- *fill*         0x20005d39        0x3 
+                0x20005d6d        0x1 _build/nrf52832_xxaa/app_button.c.o
+ *fill*         0x20005d6e        0x2 
  .bss.m_detection_delay
-                0x20005d3c        0x4 _build/nrf52832_xxaa/app_button.c.o
- .bss.m_detection_delay_timer_id_data
-                0x20005d40       0x20 _build/nrf52832_xxaa/app_button.c.o
- .bss.m_pin_state
-                0x20005d60        0x8 _build/nrf52832_xxaa/app_button.c.o
- .bss.m_pin_transition
-                0x20005d68        0x8 _build/nrf52832_xxaa/app_button.c.o
- .bss.mp_buttons
                 0x20005d70        0x4 _build/nrf52832_xxaa/app_button.c.o
+ .bss.m_detection_delay_timer_id_data
+                0x20005d74       0x20 _build/nrf52832_xxaa/app_button.c.o
+ *fill*         0x20005d94        0x4 
+ .bss.m_pin_state
+                0x20005d98        0x8 _build/nrf52832_xxaa/app_button.c.o
+ .bss.m_pin_transition
+                0x20005da0        0x8 _build/nrf52832_xxaa/app_button.c.o
+ .bss.mp_buttons
+                0x20005da8        0x4 _build/nrf52832_xxaa/app_button.c.o
  .bss.m_op_queue
-                0x20005d74      0x10c _build/nrf52832_xxaa/app_timer.c.o
+                0x20005dac      0x10c _build/nrf52832_xxaa/app_timer.c.o
  .bss.m_rtc1_reset
-                0x20005e80        0x1 _build/nrf52832_xxaa/app_timer.c.o
+                0x20005eb8        0x1 _build/nrf52832_xxaa/app_timer.c.o
  .bss.m_rtc1_running
-                0x20005e81        0x1 _build/nrf52832_xxaa/app_timer.c.o
- *fill*         0x20005e82        0x2 
+                0x20005eb9        0x1 _build/nrf52832_xxaa/app_timer.c.o
+ *fill*         0x20005eba        0x2 
  .bss.m_ticks_elapsed
-                0x20005e84        0x8 _build/nrf52832_xxaa/app_timer.c.o
+                0x20005ebc        0x8 _build/nrf52832_xxaa/app_timer.c.o
  .bss.m_ticks_elapsed_q_read_ind
-                0x20005e8c        0x1 _build/nrf52832_xxaa/app_timer.c.o
+                0x20005ec4        0x1 _build/nrf52832_xxaa/app_timer.c.o
  .bss.m_ticks_elapsed_q_write_ind
-                0x20005e8d        0x1 _build/nrf52832_xxaa/app_timer.c.o
- *fill*         0x20005e8e        0x2 
+                0x20005ec5        0x1 _build/nrf52832_xxaa/app_timer.c.o
+ *fill*         0x20005ec6        0x2 
  .bss.m_ticks_latest
-                0x20005e90        0x4 _build/nrf52832_xxaa/app_timer.c.o
+                0x20005ec8        0x4 _build/nrf52832_xxaa/app_timer.c.o
  .bss.mp_timer_id_head
-                0x20005e94        0x4 _build/nrf52832_xxaa/app_timer.c.o
+                0x20005ecc        0x4 _build/nrf52832_xxaa/app_timer.c.o
  .bss.m_nrf_sdh_enabled
-                0x20005e98        0x1 _build/nrf52832_xxaa/nrf_sdh.c.o
- *fill*         0x20005e99        0x3 
- .bss.m_cb      0x20005e9c       0x4c _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x20005ed0        0x1 _build/nrf52832_xxaa/nrf_sdh.c.o
+ *fill*         0x20005ed1        0x3 
+ .bss.m_cb      0x20005ed4       0x4c _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .bss.m_clock_cb
-                0x20005ee8        0x8 _build/nrf52832_xxaa/nrfx_clock.c.o
+                0x20005f20        0x8 _build/nrf52832_xxaa/nrfx_clock.c.o
  .bss.m_clock_cb
-                0x20005ef0       0x14 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+                0x20005f28       0x14 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+ .bss.m_drv_state
+                0x20005f3c        0x1 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ *fill*         0x20005f3d        0x3 
+ .bss.m_channels_allocated
+                0x20005f40        0x4 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .bss.m_cb      0x20005f44       0x18 _build/nrf52832_xxaa/nrfx_timer.c.o
  *(COMMON)
- COMMON         0x20005f04        0xc _build/nrf52832_xxaa/app_util_platform.c.o
-                0x20005f04                nrf_nvic_state
-                0x20005f10                . = ALIGN (0x4)
-                0x20005f10                __bss_end__ = .
+ COMMON         0x20005f5c       0x24 _build/nrf52832_xxaa/main.c.o
+                0x20005f5c                m_pwm_PWM1_cb
+ COMMON         0x20005f80        0xc _build/nrf52832_xxaa/app_util_platform.c.o
+                0x20005f80                nrf_nvic_state
+ COMMON         0x20005f8c        0xa _build/nrf52832_xxaa/app_pwm.c.o
+                0x20005f8c                m_pwm_ready_counter
+                0x20005f98                . = ALIGN (0x4)
+ *fill*         0x20005f96        0x2 
+                0x20005f98                __bss_end__ = .
 
-.heap           0x20005f10     0x2000
-                0x20005f10                __HeapBase = .
-                0x20005f10                __end__ = .
+.heap           0x20005f98     0x2000
+                0x20005f98                __HeapBase = .
+                0x20005f98                __end__ = .
                 [!provide]                PROVIDE (end = .)
  *(.heap*)
- .heap          0x20005f10     0x2000 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
-                0x20007f10                __HeapLimit = .
+ .heap          0x20005f98     0x2000 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
+                0x20007f98                __HeapLimit = .
 
-.stack_dummy    0x20005f10     0x2000
+.stack_dummy    0x20005f98     0x2000
  *(.stack*)
- .stack         0x20005f10     0x2000 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
+ .stack         0x20005f98     0x2000 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
                 0x20010000                __StackTop = (ORIGIN (RAM) + LENGTH (RAM))
                 0x2000e000                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
                 0x20010000                PROVIDE (__stack = __StackTop)
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed with stack)
                 0x00000070                DataInitFlashUsed = (__bss_start__ - __data_start__)
-                0x000023f8                CodeFlashUsed = (__etext - ORIGIN (FLASH))
-                0x00002468                TotalFlashUsed = (CodeFlashUsed + DataInitFlashUsed)
+                0x00003524                CodeFlashUsed = (__etext - ORIGIN (FLASH))
+                0x00003594                TotalFlashUsed = (CodeFlashUsed + DataInitFlashUsed)
                 0x00000001                ASSERT ((TotalFlashUsed <= LENGTH (FLASH)), region FLASH overflowed with .data and user data)
 OUTPUT(_build/nrf52832_xxaa.out elf32-littlearm)
 
@@ -4064,47 +4796,55 @@ OUTPUT(_build/nrf52832_xxaa.out elf32-littlearm)
  .ARM.attributes
                 0x0000015a       0x39 _build/nrf52832_xxaa/app_util_platform.c.o
  .ARM.attributes
-                0x00000193       0x39 _build/nrf52832_xxaa/nrf_atomic.c.o
+                0x00000193       0x39 _build/nrf52832_xxaa/app_pwm.c.o
  .ARM.attributes
-                0x000001cc       0x39 _build/nrf52832_xxaa/nrf_balloc.c.o
+                0x000001cc       0x39 _build/nrf52832_xxaa/nrf_atomic.c.o
  .ARM.attributes
-                0x00000205       0x39 _build/nrf52832_xxaa/nrf_memobj.c.o
+                0x00000205       0x39 _build/nrf52832_xxaa/nrf_balloc.c.o
  .ARM.attributes
-                0x0000023e       0x39 _build/nrf52832_xxaa/nrf_section_iter.c.o
+                0x0000023e       0x39 _build/nrf52832_xxaa/nrf_memobj.c.o
  .ARM.attributes
-                0x00000277       0x39 _build/nrf52832_xxaa/app_button.c.o
+                0x00000277       0x39 _build/nrf52832_xxaa/nrf_section_iter.c.o
  .ARM.attributes
-                0x000002b0       0x39 _build/nrf52832_xxaa/app_timer.c.o
+                0x000002b0       0x39 _build/nrf52832_xxaa/app_button.c.o
  .ARM.attributes
-                0x000002e9       0x39 _build/nrf52832_xxaa/nrf_sdh.c.o
+                0x000002e9       0x39 _build/nrf52832_xxaa/app_timer.c.o
  .ARM.attributes
-                0x00000322       0x39 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+                0x00000322       0x39 _build/nrf52832_xxaa/nrf_sdh.c.o
  .ARM.attributes
-                0x0000035b       0x39 _build/nrf52832_xxaa/system_nrf52.c.o
+                0x0000035b       0x39 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
  .ARM.attributes
-                0x00000394       0x39 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x00000394       0x39 _build/nrf52832_xxaa/system_nrf52.c.o
  .ARM.attributes
-                0x000003cd       0x39 _build/nrf52832_xxaa/nrfx_clock.c.o
+                0x000003cd       0x39 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .ARM.attributes
-                0x00000406       0x20 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
+                0x00000406       0x39 _build/nrf52832_xxaa/nrfx_clock.c.o
  .ARM.attributes
-                0x00000426       0x39 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+                0x0000043f       0x20 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
  .ARM.attributes
-                0x0000045f       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-exit.o)
+                0x0000045f       0x39 _build/nrf52832_xxaa/nrf_drv_clock.c.o
  .ARM.attributes
-                0x00000493       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-impure.o)
+                0x00000498       0x39 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
  .ARM.attributes
-                0x000004c7       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+                0x000004d1       0x39 _build/nrf52832_xxaa/nrfx_ppi.c.o
  .ARM.attributes
-                0x000004fb       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+                0x0000050a       0x39 _build/nrf52832_xxaa/nrfx_timer.c.o
  .ARM.attributes
-                0x0000052f       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+                0x00000543       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-exit.o)
  .ARM.attributes
-                0x00000563       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
+                0x00000577       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000597       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
+                0x000005ab       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x000005cb       0x22 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+                0x000005df       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000613       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000647       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
+ .ARM.attributes
+                0x0000067b       0x34 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
+ .ARM.attributes
+                0x000006af       0x22 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
 
 .comment        0x00000000       0x7f
  .comment       0x00000000       0x7f _build/nrf52832_xxaa/main.c.o
@@ -4113,6 +4853,7 @@ OUTPUT(_build/nrf52832_xxaa.out elf32-littlearm)
  .comment       0x0000007f       0x80 _build/nrf52832_xxaa/app_error.c.o
  .comment       0x0000007f       0x80 _build/nrf52832_xxaa/app_error_weak.c.o
  .comment       0x0000007f       0x80 _build/nrf52832_xxaa/app_util_platform.c.o
+ .comment       0x0000007f       0x80 _build/nrf52832_xxaa/app_pwm.c.o
  .comment       0x0000007f       0x80 _build/nrf52832_xxaa/nrf_atomic.c.o
  .comment       0x0000007f       0x80 _build/nrf52832_xxaa/nrf_balloc.c.o
  .comment       0x0000007f       0x80 _build/nrf52832_xxaa/nrf_memobj.c.o
@@ -4125,330 +4866,381 @@ OUTPUT(_build/nrf52832_xxaa.out elf32-littlearm)
  .comment       0x0000007f       0x80 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .comment       0x0000007f       0x80 _build/nrf52832_xxaa/nrfx_clock.c.o
  .comment       0x0000007f       0x80 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+ .comment       0x0000007f       0x80 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .comment       0x0000007f       0x80 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .comment       0x0000007f       0x80 _build/nrf52832_xxaa/nrfx_timer.c.o
 
-.debug_info     0x00000000    0x19ed1
- .debug_info    0x00000000     0x14b8 _build/nrf52832_xxaa/main.c.o
- .debug_info    0x000014b8     0x3bf9 _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_info    0x000050b1      0xaeb _build/nrf52832_xxaa/app_error.c.o
- .debug_info    0x00005b9c      0xf19 _build/nrf52832_xxaa/app_error_weak.c.o
- .debug_info    0x00006ab5     0x119d _build/nrf52832_xxaa/app_util_platform.c.o
- .debug_info    0x00007c52     0x122a _build/nrf52832_xxaa/nrf_atomic.c.o
- .debug_info    0x00008e7c      0xd8d _build/nrf52832_xxaa/nrf_balloc.c.o
- .debug_info    0x00009c09     0x136c _build/nrf52832_xxaa/nrf_memobj.c.o
- .debug_info    0x0000af75      0xa21 _build/nrf52832_xxaa/nrf_section_iter.c.o
- .debug_info    0x0000b996      0xf13 _build/nrf52832_xxaa/app_button.c.o
- .debug_info    0x0000c8a9     0x23d3 _build/nrf52832_xxaa/app_timer.c.o
- .debug_info    0x0000ec7c     0x1d9a _build/nrf52832_xxaa/nrf_sdh.c.o
- .debug_info    0x00010a16      0xe82 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
- .debug_info    0x00011898     0x1139 _build/nrf52832_xxaa/system_nrf52.c.o
- .debug_info    0x000129d1     0x39df _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .debug_info    0x000163b0     0x1cdd _build/nrf52832_xxaa/nrfx_clock.c.o
- .debug_info    0x0001808d       0x26 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
- .debug_info    0x000180b3     0x1e1e _build/nrf52832_xxaa/nrf_drv_clock.c.o
+.debug_info     0x00000000    0x21a3a
+ .debug_info    0x00000000     0x1b66 _build/nrf52832_xxaa/main.c.o
+ .debug_info    0x00001b66     0x3bf9 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_info    0x0000575f      0xaeb _build/nrf52832_xxaa/app_error.c.o
+ .debug_info    0x0000624a      0xf19 _build/nrf52832_xxaa/app_error_weak.c.o
+ .debug_info    0x00007163     0x119d _build/nrf52832_xxaa/app_util_platform.c.o
+ .debug_info    0x00008300     0x2a89 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_info    0x0000ad89     0x122a _build/nrf52832_xxaa/nrf_atomic.c.o
+ .debug_info    0x0000bfb3      0xd8d _build/nrf52832_xxaa/nrf_balloc.c.o
+ .debug_info    0x0000cd40     0x136c _build/nrf52832_xxaa/nrf_memobj.c.o
+ .debug_info    0x0000e0ac      0xa21 _build/nrf52832_xxaa/nrf_section_iter.c.o
+ .debug_info    0x0000eacd      0xf13 _build/nrf52832_xxaa/app_button.c.o
+ .debug_info    0x0000f9e0     0x23d3 _build/nrf52832_xxaa/app_timer.c.o
+ .debug_info    0x00011db3     0x1d9a _build/nrf52832_xxaa/nrf_sdh.c.o
+ .debug_info    0x00013b4d      0xe82 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+ .debug_info    0x000149cf     0x1139 _build/nrf52832_xxaa/system_nrf52.c.o
+ .debug_info    0x00015b08     0x39df _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_info    0x000194e7     0x1cdd _build/nrf52832_xxaa/nrfx_clock.c.o
+ .debug_info    0x0001b1c4       0x26 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
+ .debug_info    0x0001b1ea     0x1e1e _build/nrf52832_xxaa/nrf_drv_clock.c.o
+ .debug_info    0x0001d008      0x9e1 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_info    0x0001d9e9     0x1c7e _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_info    0x0001f667     0x23d3 _build/nrf52832_xxaa/nrfx_timer.c.o
 
-.debug_abbrev   0x00000000     0x3d7a
- .debug_abbrev  0x00000000      0x3d5 _build/nrf52832_xxaa/main.c.o
- .debug_abbrev  0x000003d5      0x5d7 _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_abbrev  0x000009ac      0x235 _build/nrf52832_xxaa/app_error.c.o
- .debug_abbrev  0x00000be1      0x298 _build/nrf52832_xxaa/app_error_weak.c.o
- .debug_abbrev  0x00000e79      0x381 _build/nrf52832_xxaa/app_util_platform.c.o
- .debug_abbrev  0x000011fa      0x31f _build/nrf52832_xxaa/nrf_atomic.c.o
- .debug_abbrev  0x00001519      0x302 _build/nrf52832_xxaa/nrf_balloc.c.o
- .debug_abbrev  0x0000181b      0x350 _build/nrf52832_xxaa/nrf_memobj.c.o
- .debug_abbrev  0x00001b6b      0x1da _build/nrf52832_xxaa/nrf_section_iter.c.o
- .debug_abbrev  0x00001d45      0x2d9 _build/nrf52832_xxaa/app_button.c.o
- .debug_abbrev  0x0000201e      0x49d _build/nrf52832_xxaa/app_timer.c.o
- .debug_abbrev  0x000024bb      0x4e7 _build/nrf52832_xxaa/nrf_sdh.c.o
- .debug_abbrev  0x000029a2      0x2c2 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
- .debug_abbrev  0x00002c64      0x1e2 _build/nrf52832_xxaa/system_nrf52.c.o
- .debug_abbrev  0x00002e46      0x528 _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .debug_abbrev  0x0000336e      0x4a8 _build/nrf52832_xxaa/nrfx_clock.c.o
- .debug_abbrev  0x00003816       0x14 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
- .debug_abbrev  0x0000382a      0x550 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+.debug_abbrev   0x00000000     0x4d5b
+ .debug_abbrev  0x00000000      0x43d _build/nrf52832_xxaa/main.c.o
+ .debug_abbrev  0x0000043d      0x5d7 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_abbrev  0x00000a14      0x235 _build/nrf52832_xxaa/app_error.c.o
+ .debug_abbrev  0x00000c49      0x298 _build/nrf52832_xxaa/app_error_weak.c.o
+ .debug_abbrev  0x00000ee1      0x381 _build/nrf52832_xxaa/app_util_platform.c.o
+ .debug_abbrev  0x00001262      0x4d3 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_abbrev  0x00001735      0x31f _build/nrf52832_xxaa/nrf_atomic.c.o
+ .debug_abbrev  0x00001a54      0x302 _build/nrf52832_xxaa/nrf_balloc.c.o
+ .debug_abbrev  0x00001d56      0x350 _build/nrf52832_xxaa/nrf_memobj.c.o
+ .debug_abbrev  0x000020a6      0x1da _build/nrf52832_xxaa/nrf_section_iter.c.o
+ .debug_abbrev  0x00002280      0x2d9 _build/nrf52832_xxaa/app_button.c.o
+ .debug_abbrev  0x00002559      0x49d _build/nrf52832_xxaa/app_timer.c.o
+ .debug_abbrev  0x000029f6      0x4e7 _build/nrf52832_xxaa/nrf_sdh.c.o
+ .debug_abbrev  0x00002edd      0x2c2 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+ .debug_abbrev  0x0000319f      0x1e2 _build/nrf52832_xxaa/system_nrf52.c.o
+ .debug_abbrev  0x00003381      0x528 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_abbrev  0x000038a9      0x4a8 _build/nrf52832_xxaa/nrfx_clock.c.o
+ .debug_abbrev  0x00003d51       0x14 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
+ .debug_abbrev  0x00003d65      0x550 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+ .debug_abbrev  0x000042b5      0x214 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_abbrev  0x000044c9      0x421 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_abbrev  0x000048ea      0x471 _build/nrf52832_xxaa/nrfx_timer.c.o
 
-.debug_loc      0x00000000     0x8076
- .debug_loc     0x00000000      0x322 _build/nrf52832_xxaa/main.c.o
- .debug_loc     0x00000322     0x2b49 _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_loc     0x00002e6b       0xca _build/nrf52832_xxaa/app_error.c.o
- .debug_loc     0x00002f35       0x63 _build/nrf52832_xxaa/app_error_weak.c.o
- .debug_loc     0x00002f98      0x125 _build/nrf52832_xxaa/app_util_platform.c.o
- .debug_loc     0x000030bd      0x35c _build/nrf52832_xxaa/nrf_atomic.c.o
- .debug_loc     0x00003419      0x169 _build/nrf52832_xxaa/nrf_balloc.c.o
- .debug_loc     0x00003582      0xb27 _build/nrf52832_xxaa/nrf_memobj.c.o
- .debug_loc     0x000040a9      0x3b2 _build/nrf52832_xxaa/app_button.c.o
- .debug_loc     0x0000445b      0xeb6 _build/nrf52832_xxaa/app_timer.c.o
- .debug_loc     0x00005311      0x2ab _build/nrf52832_xxaa/nrf_sdh.c.o
- .debug_loc     0x000055bc       0x74 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
- .debug_loc     0x00005630     0x228f _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .debug_loc     0x000078bf      0x31d _build/nrf52832_xxaa/nrfx_clock.c.o
- .debug_loc     0x00007bdc      0x49a _build/nrf52832_xxaa/nrf_drv_clock.c.o
+.debug_loc      0x00000000     0xada8
+ .debug_loc     0x00000000      0x376 _build/nrf52832_xxaa/main.c.o
+ .debug_loc     0x00000376     0x2b49 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_loc     0x00002ebf       0xca _build/nrf52832_xxaa/app_error.c.o
+ .debug_loc     0x00002f89       0x63 _build/nrf52832_xxaa/app_error_weak.c.o
+ .debug_loc     0x00002fec      0x125 _build/nrf52832_xxaa/app_util_platform.c.o
+ .debug_loc     0x00003111     0x1ac2 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_loc     0x00004bd3      0x35c _build/nrf52832_xxaa/nrf_atomic.c.o
+ .debug_loc     0x00004f2f      0x169 _build/nrf52832_xxaa/nrf_balloc.c.o
+ .debug_loc     0x00005098      0xb27 _build/nrf52832_xxaa/nrf_memobj.c.o
+ .debug_loc     0x00005bbf      0x3b2 _build/nrf52832_xxaa/app_button.c.o
+ .debug_loc     0x00005f71      0xeb6 _build/nrf52832_xxaa/app_timer.c.o
+ .debug_loc     0x00006e27      0x2ab _build/nrf52832_xxaa/nrf_sdh.c.o
+ .debug_loc     0x000070d2       0x74 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+ .debug_loc     0x00007146     0x228f _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_loc     0x000093d5      0x31d _build/nrf52832_xxaa/nrfx_clock.c.o
+ .debug_loc     0x000096f2      0x49a _build/nrf52832_xxaa/nrf_drv_clock.c.o
+ .debug_loc     0x00009b8c      0x92e _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_loc     0x0000a4ba      0x8ee _build/nrf52832_xxaa/nrfx_timer.c.o
 
-.debug_aranges  0x00000000      0x668
+.debug_aranges  0x00000000      0x820
  .debug_aranges
-                0x00000000       0x28 _build/nrf52832_xxaa/main.c.o
+                0x00000000       0x30 _build/nrf52832_xxaa/main.c.o
  .debug_aranges
-                0x00000028       0xc8 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+                0x00000030       0xc8 _build/nrf52832_xxaa/nrf_log_frontend.c.o
  .debug_aranges
-                0x000000f0       0x28 _build/nrf52832_xxaa/app_error.c.o
+                0x000000f8       0x28 _build/nrf52832_xxaa/app_error.c.o
  .debug_aranges
-                0x00000118       0x20 _build/nrf52832_xxaa/app_error_weak.c.o
+                0x00000120       0x20 _build/nrf52832_xxaa/app_error_weak.c.o
  .debug_aranges
-                0x00000138       0x48 _build/nrf52832_xxaa/app_util_platform.c.o
+                0x00000140       0x48 _build/nrf52832_xxaa/app_util_platform.c.o
  .debug_aranges
-                0x00000180       0xb0 _build/nrf52832_xxaa/nrf_atomic.c.o
+                0x00000188       0x70 _build/nrf52832_xxaa/app_pwm.c.o
  .debug_aranges
-                0x00000230       0x30 _build/nrf52832_xxaa/nrf_balloc.c.o
+                0x000001f8       0xb0 _build/nrf52832_xxaa/nrf_atomic.c.o
  .debug_aranges
-                0x00000260       0x50 _build/nrf52832_xxaa/nrf_memobj.c.o
+                0x000002a8       0x30 _build/nrf52832_xxaa/nrf_balloc.c.o
  .debug_aranges
-                0x000002b0       0x28 _build/nrf52832_xxaa/nrf_section_iter.c.o
+                0x000002d8       0x50 _build/nrf52832_xxaa/nrf_memobj.c.o
  .debug_aranges
-                0x000002d8       0x48 _build/nrf52832_xxaa/app_button.c.o
+                0x00000328       0x28 _build/nrf52832_xxaa/nrf_section_iter.c.o
  .debug_aranges
-                0x00000320       0x70 _build/nrf52832_xxaa/app_timer.c.o
+                0x00000350       0x48 _build/nrf52832_xxaa/app_button.c.o
  .debug_aranges
-                0x00000390       0x70 _build/nrf52832_xxaa/nrf_sdh.c.o
+                0x00000398       0x70 _build/nrf52832_xxaa/app_timer.c.o
  .debug_aranges
-                0x00000400       0x28 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+                0x00000408       0x70 _build/nrf52832_xxaa/nrf_sdh.c.o
  .debug_aranges
-                0x00000428       0x28 _build/nrf52832_xxaa/system_nrf52.c.o
+                0x00000478       0x28 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
  .debug_aranges
-                0x00000450       0xd8 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+                0x000004a0       0x28 _build/nrf52832_xxaa/system_nrf52.c.o
  .debug_aranges
-                0x00000528       0x78 _build/nrf52832_xxaa/nrfx_clock.c.o
+                0x000004c8       0xd8 _build/nrf52832_xxaa/nrfx_gpiote.c.o
  .debug_aranges
-                0x000005a0       0x20 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
+                0x000005a0       0x78 _build/nrf52832_xxaa/nrfx_clock.c.o
  .debug_aranges
-                0x000005c0       0xa8 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+                0x00000618       0x20 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
+ .debug_aranges
+                0x00000638       0xa8 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+ .debug_aranges
+                0x000006e0       0x28 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_aranges
+                0x00000708       0x80 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_aranges
+                0x00000788       0x98 _build/nrf52832_xxaa/nrfx_timer.c.o
 
-.debug_ranges   0x00000000     0x23e0
- .debug_ranges  0x00000000       0xc8 _build/nrf52832_xxaa/main.c.o
- .debug_ranges  0x000000c8      0x990 _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_ranges  0x00000a58       0x18 _build/nrf52832_xxaa/app_error.c.o
- .debug_ranges  0x00000a70       0x10 _build/nrf52832_xxaa/app_error_weak.c.o
- .debug_ranges  0x00000a80       0x80 _build/nrf52832_xxaa/app_util_platform.c.o
- .debug_ranges  0x00000b00       0xb8 _build/nrf52832_xxaa/nrf_atomic.c.o
- .debug_ranges  0x00000bb8       0x78 _build/nrf52832_xxaa/nrf_balloc.c.o
- .debug_ranges  0x00000c30       0xb0 _build/nrf52832_xxaa/nrf_memobj.c.o
- .debug_ranges  0x00000ce0       0x18 _build/nrf52832_xxaa/nrf_section_iter.c.o
- .debug_ranges  0x00000cf8       0x88 _build/nrf52832_xxaa/app_button.c.o
- .debug_ranges  0x00000d80      0x570 _build/nrf52832_xxaa/app_timer.c.o
- .debug_ranges  0x000012f0      0x220 _build/nrf52832_xxaa/nrf_sdh.c.o
- .debug_ranges  0x00001510       0x30 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
- .debug_ranges  0x00001540      0x168 _build/nrf52832_xxaa/system_nrf52.c.o
- .debug_ranges  0x000016a8      0x810 _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .debug_ranges  0x00001eb8      0x2a0 _build/nrf52832_xxaa/nrfx_clock.c.o
- .debug_ranges  0x00002158      0x288 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+.debug_ranges   0x00000000     0x3080
+ .debug_ranges  0x00000000      0x120 _build/nrf52832_xxaa/main.c.o
+ .debug_ranges  0x00000120      0x990 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_ranges  0x00000ab0       0x18 _build/nrf52832_xxaa/app_error.c.o
+ .debug_ranges  0x00000ac8       0x10 _build/nrf52832_xxaa/app_error_weak.c.o
+ .debug_ranges  0x00000ad8       0x80 _build/nrf52832_xxaa/app_util_platform.c.o
+ .debug_ranges  0x00000b58      0x610 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_ranges  0x00001168       0xb8 _build/nrf52832_xxaa/nrf_atomic.c.o
+ .debug_ranges  0x00001220       0x78 _build/nrf52832_xxaa/nrf_balloc.c.o
+ .debug_ranges  0x00001298       0xb0 _build/nrf52832_xxaa/nrf_memobj.c.o
+ .debug_ranges  0x00001348       0x18 _build/nrf52832_xxaa/nrf_section_iter.c.o
+ .debug_ranges  0x00001360       0x88 _build/nrf52832_xxaa/app_button.c.o
+ .debug_ranges  0x000013e8      0x570 _build/nrf52832_xxaa/app_timer.c.o
+ .debug_ranges  0x00001958      0x220 _build/nrf52832_xxaa/nrf_sdh.c.o
+ .debug_ranges  0x00001b78       0x30 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+ .debug_ranges  0x00001ba8      0x168 _build/nrf52832_xxaa/system_nrf52.c.o
+ .debug_ranges  0x00001d10      0x810 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_ranges  0x00002520      0x2a0 _build/nrf52832_xxaa/nrfx_clock.c.o
+ .debug_ranges  0x000027c0      0x288 _build/nrf52832_xxaa/nrf_drv_clock.c.o
+ .debug_ranges  0x00002a48       0x18 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_ranges  0x00002a60      0x2f8 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_ranges  0x00002d58      0x328 _build/nrf52832_xxaa/nrfx_timer.c.o
 
-.debug_macro    0x00000000    0x19aea
- .debug_macro   0x00000000      0x40f _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x0000040f      0xa8a _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00000e99       0x18 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00000eb1       0x22 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00000ed3       0x58 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00000f2b       0x5c _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00000f87       0x35 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00000fbc       0x34 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00000ff0       0x16 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00001006      0x10e _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00001114       0x86 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x0000119a       0x57 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000011f1       0x58 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00001249       0x1f _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00001268       0x43 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000012ab       0x20 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000012cb      0x18e _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00001459      0x353 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000017ac       0x22 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000017ce       0xef _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000018bd       0x6a _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00001927      0x1df _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00001b06       0x22 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00001b28     0x21b5 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00003cdd       0x22 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00003cff       0x2d _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00003d2c       0x3b _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00003d67       0x50 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00003db7      0xe66 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00004c1d      0x392 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00004faf     0xccbe _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00011c6d     0x1313 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00012f80       0x82 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00013002       0x22 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00013024      0x3a3 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000133c7       0x3d _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00013404      0xe7b _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x0001427f      0x125 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000143a4       0x16 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000143ba      0x16d _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00014527      0x7ae _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00014cd5       0x3f _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00014d14       0x16 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00014d2a       0x9a _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00014dc4       0x46 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00014e0a       0xa3 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00014ead       0x3a _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00014ee7       0x1c _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00014f03       0x35 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00014f38       0x10 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00014f48       0x10 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00014f58       0xb6 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x0001500e       0x16 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00015024      0x129 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x0001514d       0xa7 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000151f4       0x49 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x0001523d       0x8c _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000152c9       0x19 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000152e2       0x16 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000152f8       0x7b _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00015373       0x22 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00015395       0x40 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000153d5       0x20 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000153f5       0x16 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x0001540b      0x25a _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00015665      0x16d _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000157d2       0x10 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000157e2       0x25 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00015807       0x22 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00015829       0x10 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00015839       0x94 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000158cd       0x1c _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000158e9       0x10 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x000158f9       0x3c _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00015935       0x22 _build/nrf52832_xxaa/main.c.o
- .debug_macro   0x00015957      0x40d _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x00015d64       0x10 _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x00015d74       0x2e _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x00015da2       0x22 _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x00015dc4       0x4e _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x00015e12       0x31 _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x00015e43       0x16 _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x00015e59       0x55 _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x00015eae      0x185 _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x00016033       0x9a _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x000160cd       0x2e _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x000160fb       0x9e _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x00016199       0x10 _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x000161a9       0x1d _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x000161c6       0x1c _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_macro   0x000161e2      0x21f _build/nrf52832_xxaa/app_error.c.o
- .debug_macro   0x00016401       0x35 _build/nrf52832_xxaa/app_error.c.o
- .debug_macro   0x00016436       0x97 _build/nrf52832_xxaa/app_error.c.o
- .debug_macro   0x000164cd       0xf6 _build/nrf52832_xxaa/app_error.c.o
- .debug_macro   0x000165c3      0x3ad _build/nrf52832_xxaa/app_error_weak.c.o
- .debug_macro   0x00016970       0x16 _build/nrf52832_xxaa/app_error_weak.c.o
- .debug_macro   0x00016986       0x1c _build/nrf52832_xxaa/app_error_weak.c.o
- .debug_macro   0x000169a2      0x11b _build/nrf52832_xxaa/app_error_weak.c.o
- .debug_macro   0x00016abd      0x263 _build/nrf52832_xxaa/app_util_platform.c.o
- .debug_macro   0x00016d20      0x223 _build/nrf52832_xxaa/nrf_atomic.c.o
- .debug_macro   0x00016f43       0x42 _build/nrf52832_xxaa/nrf_atomic.c.o
- .debug_macro   0x00016f85      0x350 _build/nrf52832_xxaa/nrf_balloc.c.o
- .debug_macro   0x000172d5       0x10 _build/nrf52832_xxaa/nrf_balloc.c.o
- .debug_macro   0x000172e5      0x337 _build/nrf52832_xxaa/nrf_memobj.c.o
- .debug_macro   0x0001761c       0x54 _build/nrf52832_xxaa/nrf_memobj.c.o
- .debug_macro   0x00017670      0x232 _build/nrf52832_xxaa/nrf_section_iter.c.o
- .debug_macro   0x000178a2       0x11 _build/nrf52832_xxaa/nrf_section_iter.c.o
- .debug_macro   0x000178b3      0x3cf _build/nrf52832_xxaa/app_button.c.o
- .debug_macro   0x00017c82       0x1c _build/nrf52832_xxaa/app_button.c.o
- .debug_macro   0x00017c9e       0x42 _build/nrf52832_xxaa/app_button.c.o
- .debug_macro   0x00017ce0       0x44 _build/nrf52832_xxaa/app_button.c.o
- .debug_macro   0x00017d24       0xcc _build/nrf52832_xxaa/app_button.c.o
- .debug_macro   0x00017df0      0x40f _build/nrf52832_xxaa/app_timer.c.o
- .debug_macro   0x000181ff       0x45 _build/nrf52832_xxaa/app_timer.c.o
- .debug_macro   0x00018244      0x37f _build/nrf52832_xxaa/nrf_sdh.c.o
- .debug_macro   0x000185c3       0x2b _build/nrf52832_xxaa/nrf_sdh.c.o
- .debug_macro   0x000185ee      0x173 _build/nrf52832_xxaa/nrf_sdh.c.o
- .debug_macro   0x00018761      0x356 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
- .debug_macro   0x00018ab7       0x16 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
- .debug_macro   0x00018acd       0xf1 _build/nrf52832_xxaa/system_nrf52.c.o
- .debug_macro   0x00018bbe      0x440 _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .debug_macro   0x00018ffe       0x1c _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .debug_macro   0x0001901a       0x16 _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .debug_macro   0x00019030       0x1c _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .debug_macro   0x0001904c       0x37 _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .debug_macro   0x00019083      0x17f _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .debug_macro   0x00019202       0x42 _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .debug_macro   0x00019244      0x447 _build/nrf52832_xxaa/nrfx_clock.c.o
- .debug_macro   0x0001968b      0x45f _build/nrf52832_xxaa/nrf_drv_clock.c.o
+.debug_macro    0x00000000    0x1ac27
+ .debug_macro   0x00000000      0x445 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00000445      0xa8a _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00000ecf       0x18 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00000ee7       0x22 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00000f09       0x58 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00000f61       0x5c _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00000fbd       0x35 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00000ff2       0x34 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00001026       0x16 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0000103c      0x10e _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0000114a       0x86 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x000011d0       0x57 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00001227       0x58 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0000127f       0x1f _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0000129e       0x43 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x000012e1       0x20 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00001301      0x18e _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0000148f      0x353 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x000017e2       0x22 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00001804       0xef _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x000018f3       0x6a _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0000195d      0x1df _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00001b3c       0x22 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00001b5e     0x21b5 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00003d13       0x22 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00003d35       0x2d _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00003d62       0x3b _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00003d9d       0x50 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00003ded      0xe66 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00004c53      0x392 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00004fe5     0xccbe _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00011ca3     0x1313 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00012fb6       0x82 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00013038       0x22 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001305a      0x3a3 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x000133fd       0x3d _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001343a      0xe7b _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x000142b5      0x125 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x000143da       0x16 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x000143f0      0x16d _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001455d      0x7ae _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00014d0b       0x3f _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00014d4a       0x16 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00014d60       0x9a _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00014dfa       0x46 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00014e40       0xa3 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00014ee3       0x3a _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00014f1d       0x1c _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00014f39       0x35 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00014f6e       0x10 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00014f7e       0x10 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00014f8e       0xb6 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00015044       0x16 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001505a      0x129 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00015183       0xa7 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001522a       0x49 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00015273       0x8c _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x000152ff       0x19 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00015318       0x16 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001532e       0x7b _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x000153a9       0x22 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x000153cb       0x40 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001540b       0x20 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001542b       0x16 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00015441      0x25a _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001569b      0x16d _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00015808       0x10 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00015818       0x25 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001583d       0x22 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001585f       0x10 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001586f       0x94 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00015903       0x1c _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001591f       0x10 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001592f       0x3c _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001596b       0x22 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001598d       0x10 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x0001599d       0x16 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x000159b3       0x88 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00015a3b       0x28 _build/nrf52832_xxaa/main.c.o
+ .debug_macro   0x00015a63      0x40d _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x00015e70       0x10 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x00015e80       0x2e _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x00015eae       0x22 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x00015ed0       0x4e _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x00015f1e       0x31 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x00015f4f       0x16 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x00015f65       0x55 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x00015fba      0x185 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x0001613f       0x9a _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x000161d9       0x2e _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x00016207       0x9e _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x000162a5       0x10 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x000162b5       0x1d _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x000162d2       0x1c _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_macro   0x000162ee      0x21f _build/nrf52832_xxaa/app_error.c.o
+ .debug_macro   0x0001650d       0x35 _build/nrf52832_xxaa/app_error.c.o
+ .debug_macro   0x00016542       0x97 _build/nrf52832_xxaa/app_error.c.o
+ .debug_macro   0x000165d9       0xf6 _build/nrf52832_xxaa/app_error.c.o
+ .debug_macro   0x000166cf      0x3ad _build/nrf52832_xxaa/app_error_weak.c.o
+ .debug_macro   0x00016a7c       0x16 _build/nrf52832_xxaa/app_error_weak.c.o
+ .debug_macro   0x00016a92       0x1c _build/nrf52832_xxaa/app_error_weak.c.o
+ .debug_macro   0x00016aae      0x11b _build/nrf52832_xxaa/app_error_weak.c.o
+ .debug_macro   0x00016bc9      0x263 _build/nrf52832_xxaa/app_util_platform.c.o
+ .debug_macro   0x00016e2c      0x45a _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00017286       0x82 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00017308       0x1c _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00017324       0x44 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00017368       0xcc _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_macro   0x00017434      0x223 _build/nrf52832_xxaa/nrf_atomic.c.o
+ .debug_macro   0x00017657       0x42 _build/nrf52832_xxaa/nrf_atomic.c.o
+ .debug_macro   0x00017699      0x350 _build/nrf52832_xxaa/nrf_balloc.c.o
+ .debug_macro   0x000179e9       0x10 _build/nrf52832_xxaa/nrf_balloc.c.o
+ .debug_macro   0x000179f9      0x337 _build/nrf52832_xxaa/nrf_memobj.c.o
+ .debug_macro   0x00017d30       0x54 _build/nrf52832_xxaa/nrf_memobj.c.o
+ .debug_macro   0x00017d84      0x232 _build/nrf52832_xxaa/nrf_section_iter.c.o
+ .debug_macro   0x00017fb6       0x11 _build/nrf52832_xxaa/nrf_section_iter.c.o
+ .debug_macro   0x00017fc7      0x3cf _build/nrf52832_xxaa/app_button.c.o
+ .debug_macro   0x00018396       0x1c _build/nrf52832_xxaa/app_button.c.o
+ .debug_macro   0x000183b2       0x42 _build/nrf52832_xxaa/app_button.c.o
+ .debug_macro   0x000183f4      0x40f _build/nrf52832_xxaa/app_timer.c.o
+ .debug_macro   0x00018803       0x45 _build/nrf52832_xxaa/app_timer.c.o
+ .debug_macro   0x00018848      0x37f _build/nrf52832_xxaa/nrf_sdh.c.o
+ .debug_macro   0x00018bc7       0x2b _build/nrf52832_xxaa/nrf_sdh.c.o
+ .debug_macro   0x00018bf2      0x173 _build/nrf52832_xxaa/nrf_sdh.c.o
+ .debug_macro   0x00018d65      0x356 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+ .debug_macro   0x000190bb       0x16 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+ .debug_macro   0x000190d1       0xf1 _build/nrf52832_xxaa/system_nrf52.c.o
+ .debug_macro   0x000191c2      0x440 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_macro   0x00019602       0x16 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_macro   0x00019618       0x1c _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_macro   0x00019634       0x37 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_macro   0x0001966b      0x17f _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_macro   0x000197ea       0x42 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_macro   0x0001982c      0x447 _build/nrf52832_xxaa/nrfx_clock.c.o
+ .debug_macro   0x00019c73      0x45f _build/nrf52832_xxaa/nrf_drv_clock.c.o
+ .debug_macro   0x0001a0d2      0x363 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_macro   0x0001a435      0x3f2 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_macro   0x0001a827      0x400 _build/nrf52832_xxaa/nrfx_timer.c.o
 
-.debug_line     0x00000000     0xab6f
- .debug_line    0x00000000      0xb08 _build/nrf52832_xxaa/main.c.o
- .debug_line    0x00000b08     0x108f _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_line    0x00001b97      0x532 _build/nrf52832_xxaa/app_error.c.o
- .debug_line    0x000020c9      0x900 _build/nrf52832_xxaa/app_error_weak.c.o
- .debug_line    0x000029c9      0x648 _build/nrf52832_xxaa/app_util_platform.c.o
- .debug_line    0x00003011      0x710 _build/nrf52832_xxaa/nrf_atomic.c.o
- .debug_line    0x00003721      0x843 _build/nrf52832_xxaa/nrf_balloc.c.o
- .debug_line    0x00003f64      0x920 _build/nrf52832_xxaa/nrf_memobj.c.o
- .debug_line    0x00004884      0x5b3 _build/nrf52832_xxaa/nrf_section_iter.c.o
- .debug_line    0x00004e37      0xa53 _build/nrf52832_xxaa/app_button.c.o
- .debug_line    0x0000588a      0xdb1 _build/nrf52832_xxaa/app_timer.c.o
- .debug_line    0x0000663b      0xa41 _build/nrf52832_xxaa/nrf_sdh.c.o
- .debug_line    0x0000707c      0x7fd _build/nrf52832_xxaa/nrf_sdh_soc.c.o
- .debug_line    0x00007879      0x49b _build/nrf52832_xxaa/system_nrf52.c.o
- .debug_line    0x00007d14     0x12fa _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .debug_line    0x0000900e      0xd37 _build/nrf52832_xxaa/nrfx_clock.c.o
- .debug_line    0x00009d45       0xa0 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
- .debug_line    0x00009de5      0xd8a _build/nrf52832_xxaa/nrf_drv_clock.c.o
+.debug_line     0x00000000     0xe00c
+ .debug_line    0x00000000      0xba5 _build/nrf52832_xxaa/main.c.o
+ .debug_line    0x00000ba5     0x108f _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_line    0x00001c34      0x532 _build/nrf52832_xxaa/app_error.c.o
+ .debug_line    0x00002166      0x900 _build/nrf52832_xxaa/app_error_weak.c.o
+ .debug_line    0x00002a66      0x648 _build/nrf52832_xxaa/app_util_platform.c.o
+ .debug_line    0x000030ae      0xe8c _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_line    0x00003f3a      0x710 _build/nrf52832_xxaa/nrf_atomic.c.o
+ .debug_line    0x0000464a      0x843 _build/nrf52832_xxaa/nrf_balloc.c.o
+ .debug_line    0x00004e8d      0x920 _build/nrf52832_xxaa/nrf_memobj.c.o
+ .debug_line    0x000057ad      0x5b3 _build/nrf52832_xxaa/nrf_section_iter.c.o
+ .debug_line    0x00005d60      0xa53 _build/nrf52832_xxaa/app_button.c.o
+ .debug_line    0x000067b3      0xdb1 _build/nrf52832_xxaa/app_timer.c.o
+ .debug_line    0x00007564      0xa41 _build/nrf52832_xxaa/nrf_sdh.c.o
+ .debug_line    0x00007fa5      0x7fd _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+ .debug_line    0x000087a2      0x49b _build/nrf52832_xxaa/system_nrf52.c.o
+ .debug_line    0x00008c3d     0x12fa _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_line    0x00009f37      0xd37 _build/nrf52832_xxaa/nrfx_clock.c.o
+ .debug_line    0x0000ac6e       0xa0 _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
+ .debug_line    0x0000ad0e      0xd8a _build/nrf52832_xxaa/nrf_drv_clock.c.o
+ .debug_line    0x0000ba98      0x880 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_line    0x0000c318      0xe28 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_line    0x0000d140      0xecc _build/nrf52832_xxaa/nrfx_timer.c.o
 
-.debug_str      0x00000000    0x856a0
- .debug_str     0x00000000    0x7976a _build/nrf52832_xxaa/main.c.o
-                              0x7b830 (size before relaxing)
- .debug_str     0x0007976a     0x50e1 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+.debug_str      0x00000000    0x8779d
+ .debug_str     0x00000000    0x7a638 _build/nrf52832_xxaa/main.c.o
+                              0x7c721 (size before relaxing)
+ .debug_str     0x0007a638     0x50d7 _build/nrf52832_xxaa/nrf_log_frontend.c.o
                               0x773ca (size before relaxing)
- .debug_str     0x0007e84b      0x10e _build/nrf52832_xxaa/app_error.c.o
+ .debug_str     0x0007f70f      0x10e _build/nrf52832_xxaa/app_error.c.o
                               0x609af (size before relaxing)
- .debug_str     0x0007e959      0xa6c _build/nrf52832_xxaa/app_error_weak.c.o
+ .debug_str     0x0007f81d      0xa6c _build/nrf52832_xxaa/app_error_weak.c.o
                               0x76f2c (size before relaxing)
- .debug_str     0x0007f3c5      0x484 _build/nrf52832_xxaa/app_util_platform.c.o
+ .debug_str     0x00080289      0x45c _build/nrf52832_xxaa/app_util_platform.c.o
                               0x61ec3 (size before relaxing)
- .debug_str     0x0007f849      0x6d3 _build/nrf52832_xxaa/nrf_atomic.c.o
+ .debug_str     0x000806e5     0x1973 _build/nrf52832_xxaa/app_pwm.c.o
+                              0x7cf62 (size before relaxing)
+ .debug_str     0x00082058      0x6d3 _build/nrf52832_xxaa/nrf_atomic.c.o
                               0x7132a (size before relaxing)
- .debug_str     0x0007ff1c      0x17e _build/nrf52832_xxaa/nrf_balloc.c.o
+ .debug_str     0x0008272b      0x17e _build/nrf52832_xxaa/nrf_balloc.c.o
                               0x75eec (size before relaxing)
- .debug_str     0x0008009a      0x1d6 _build/nrf52832_xxaa/nrf_memobj.c.o
+ .debug_str     0x000828a9      0x1d6 _build/nrf52832_xxaa/nrf_memobj.c.o
                               0x742aa (size before relaxing)
- .debug_str     0x00080270      0x275 _build/nrf52832_xxaa/nrf_section_iter.c.o
+ .debug_str     0x00082a7f      0x275 _build/nrf52832_xxaa/nrf_section_iter.c.o
                               0x71152 (size before relaxing)
- .debug_str     0x000804e5     0x10d4 _build/nrf52832_xxaa/app_button.c.o
+ .debug_str     0x00082cf4      0x245 _build/nrf52832_xxaa/app_button.c.o
                               0x7adae (size before relaxing)
- .debug_str     0x000815b9      0x8eb _build/nrf52832_xxaa/app_timer.c.o
+ .debug_str     0x00082f39      0x886 _build/nrf52832_xxaa/app_timer.c.o
                               0x7a772 (size before relaxing)
- .debug_str     0x00081ea4      0x9fe _build/nrf52832_xxaa/nrf_sdh.c.o
+ .debug_str     0x000837bf      0x9fe _build/nrf52832_xxaa/nrf_sdh.c.o
                               0x7691b (size before relaxing)
- .debug_str     0x000828a2      0x901 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+ .debug_str     0x000841bd      0x901 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
                               0x758d6 (size before relaxing)
- .debug_str     0x000831a3      0x48f _build/nrf52832_xxaa/system_nrf52.c.o
+ .debug_str     0x00084abe      0x485 _build/nrf52832_xxaa/system_nrf52.c.o
                               0x5c4b1 (size before relaxing)
- .debug_str     0x00083632     0x1101 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_str     0x00084f43      0xff1 _build/nrf52832_xxaa/nrfx_gpiote.c.o
                               0x7e394 (size before relaxing)
- .debug_str     0x00084733      0x9a4 _build/nrf52832_xxaa/nrfx_clock.c.o
+ .debug_str     0x00085f34      0x99b _build/nrf52832_xxaa/nrfx_clock.c.o
                               0x7d279 (size before relaxing)
- .debug_str     0x000850d7       0x5f _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
+ .debug_str     0x000868cf       0x5f _build/nrf52832_xxaa/gcc_startup_nrf52.S.o
                                  0x7c (size before relaxing)
- .debug_str     0x00085136      0x56a _build/nrf52832_xxaa/nrf_drv_clock.c.o
+ .debug_str     0x0008692e      0x56a _build/nrf52832_xxaa/nrf_drv_clock.c.o
                               0x7dc81 (size before relaxing)
+ .debug_str     0x00086e98       0x83 _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+                              0x798ae (size before relaxing)
+ .debug_str     0x00086f1b      0x402 _build/nrf52832_xxaa/nrfx_ppi.c.o
+                              0x7cbf9 (size before relaxing)
+ .debug_str     0x0008731d      0x480 _build/nrf52832_xxaa/nrfx_timer.c.o
+                              0x7d9a8 (size before relaxing)
 
-.debug_frame    0x00000000     0x11c4
- .debug_frame   0x00000000       0x3c _build/nrf52832_xxaa/main.c.o
- .debug_frame   0x0000003c      0x328 _build/nrf52832_xxaa/nrf_log_frontend.c.o
- .debug_frame   0x00000364       0x54 _build/nrf52832_xxaa/app_error.c.o
- .debug_frame   0x000003b8       0x28 _build/nrf52832_xxaa/app_error_weak.c.o
- .debug_frame   0x000003e0       0x90 _build/nrf52832_xxaa/app_util_platform.c.o
- .debug_frame   0x00000470      0x150 _build/nrf52832_xxaa/nrf_atomic.c.o
- .debug_frame   0x000005c0       0x70 _build/nrf52832_xxaa/nrf_balloc.c.o
- .debug_frame   0x00000630       0xd8 _build/nrf52832_xxaa/nrf_memobj.c.o
- .debug_frame   0x00000708       0x30 _build/nrf52832_xxaa/nrf_section_iter.c.o
- .debug_frame   0x00000738      0x120 _build/nrf52832_xxaa/app_button.c.o
- .debug_frame   0x00000858      0x16c _build/nrf52832_xxaa/app_timer.c.o
- .debug_frame   0x000009c4      0x120 _build/nrf52832_xxaa/nrf_sdh.c.o
- .debug_frame   0x00000ae4       0x40 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
- .debug_frame   0x00000b24       0x40 _build/nrf52832_xxaa/system_nrf52.c.o
- .debug_frame   0x00000b64      0x298 _build/nrf52832_xxaa/nrfx_gpiote.c.o
- .debug_frame   0x00000dfc      0x120 _build/nrf52832_xxaa/nrfx_clock.c.o
- .debug_frame   0x00000f1c      0x1ec _build/nrf52832_xxaa/nrf_drv_clock.c.o
- .debug_frame   0x00001108       0x28 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-exit.o)
- .debug_frame   0x00001130       0x2c c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
- .debug_frame   0x0000115c       0x28 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00001184       0x20 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
- .debug_frame   0x000011a4       0x20 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)
+.debug_frame    0x00000000     0x1778
+ .debug_frame   0x00000000       0x58 _build/nrf52832_xxaa/main.c.o
+ .debug_frame   0x00000058      0x328 _build/nrf52832_xxaa/nrf_log_frontend.c.o
+ .debug_frame   0x00000380       0x54 _build/nrf52832_xxaa/app_error.c.o
+ .debug_frame   0x000003d4       0x28 _build/nrf52832_xxaa/app_error_weak.c.o
+ .debug_frame   0x000003fc       0x90 _build/nrf52832_xxaa/app_util_platform.c.o
+ .debug_frame   0x0000048c      0x1c4 _build/nrf52832_xxaa/app_pwm.c.o
+ .debug_frame   0x00000650      0x150 _build/nrf52832_xxaa/nrf_atomic.c.o
+ .debug_frame   0x000007a0       0x70 _build/nrf52832_xxaa/nrf_balloc.c.o
+ .debug_frame   0x00000810       0xd8 _build/nrf52832_xxaa/nrf_memobj.c.o
+ .debug_frame   0x000008e8       0x30 _build/nrf52832_xxaa/nrf_section_iter.c.o
+ .debug_frame   0x00000918      0x120 _build/nrf52832_xxaa/app_button.c.o
+ .debug_frame   0x00000a38      0x16c _build/nrf52832_xxaa/app_timer.c.o
+ .debug_frame   0x00000ba4      0x120 _build/nrf52832_xxaa/nrf_sdh.c.o
+ .debug_frame   0x00000cc4       0x40 _build/nrf52832_xxaa/nrf_sdh_soc.c.o
+ .debug_frame   0x00000d04       0x40 _build/nrf52832_xxaa/system_nrf52.c.o
+ .debug_frame   0x00000d44      0x298 _build/nrf52832_xxaa/nrfx_gpiote.c.o
+ .debug_frame   0x00000fdc      0x120 _build/nrf52832_xxaa/nrfx_clock.c.o
+ .debug_frame   0x000010fc      0x1ec _build/nrf52832_xxaa/nrf_drv_clock.c.o
+ .debug_frame   0x000012e8       0x3c _build/nrf52832_xxaa/nrf_drv_ppi.c.o
+ .debug_frame   0x00001324      0x1d4 _build/nrf52832_xxaa/nrfx_ppi.c.o
+ .debug_frame   0x000014f8      0x1c4 _build/nrf52832_xxaa/nrfx_timer.c.o
+ .debug_frame   0x000016bc       0x28 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x000016e4       0x2c c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x00001710       0x28 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00001738       0x20 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x00001758       0x20 c:/work/gcc-arm-none-eabi-7-2018-q2-update-win32/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(_exit.o)

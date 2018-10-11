@@ -84,7 +84,11 @@ _build/nrf52832_xxaa/main.c.o: \
  C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/modules/nrfx/drivers/include/nrfx_power_clock.h \
  C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/components/libraries/timer/app_timer.h \
  C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/components/libraries/util/app_error.h \
- C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/components/libraries/button/app_button.h
+ C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/components/libraries/button/app_button.h \
+ C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/components/libraries/pwm/app_pwm.h \
+ C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/integration/nrfx/legacy/nrf_drv_ppi.h \
+ C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/modules/nrfx/drivers/include/nrfx_ppi.h \
+ C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/modules/nrfx/hal/nrf_ppi.h
 
 c:\work\gcc-arm-none-eabi-7-2018-q2-update-win32\arm-none-eabi\include\stdlib.h:
 
@@ -255,3 +259,11 @@ C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/components/libraries/timer/app_timer
 C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/components/libraries/util/app_error.h:
 
 C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/components/libraries/button/app_button.h:
+
+C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/components/libraries/pwm/app_pwm.h:
+
+C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/integration/nrfx/legacy/nrf_drv_ppi.h:
+
+C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/modules/nrfx/drivers/include/nrfx_ppi.h:
+
+C:/Work/NordicSemiconductor/nRF5_SDK_15.2.0/modules/nrfx/hal/nrf_ppi.h:
