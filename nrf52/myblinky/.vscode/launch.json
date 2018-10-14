@@ -9,7 +9,7 @@
             "type": "cortex-debug",
             "request": "attach",
             "cwd": "${workspaceRoot}",
-            "executable": "${workspaceRoot}/_build/nrf52832_xxaa.out",            
+            "executable": "${workspaceRoot}/myblinky/_build/nrf52832_xxaa.out",            
             "servertype": "openocd",
             "configFiles": [
                 "C:/Work/openocd-0.10.0/share/openocd/scripts/interface/stlink.cfg",

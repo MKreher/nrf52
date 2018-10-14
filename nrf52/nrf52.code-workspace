@@ -1,8 +1,14 @@
 {
 	"folders": [
 		{
-			"path": "myblinky"
+			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"app_button.h": "c",
+			"boards.h": "c",
+			"pca10040.h": "c"
+		}
+	}
 }
