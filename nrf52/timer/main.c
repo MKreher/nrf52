@@ -114,8 +114,7 @@ void init_timer_driver()
 }
 */
 
-static void
-mytimeout_handler(void *p_context)
+static void mytimeout_handler(void *p_context)
 {
     nrf_gpio_pin_toggle(led_board_2);
 }

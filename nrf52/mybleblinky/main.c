@@ -56,6 +56,7 @@
 #include "nrf_sdh.h"
 #include "nrf_sdh_ble.h"
 #include "boards.h"
+#include "nrf_drv_clock.h"
 #include "app_timer.h"
 #include "app_button.h"
 #include "ble_lbs.h"
@@ -67,10 +68,10 @@
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 
-#define ADVERTISING_LED                 BSP_BOARD_LED_0                         /**< Is on when device is advertising. */
-#define CONNECTED_LED                   BSP_BOARD_LED_1                         /**< Is on when device has connected. */
-#define LEDBUTTON_LED                   BSP_BOARD_LED_2                         /**< LED to be toggled with the help of the LED Button Service. */
-//#define DEBUG_LED                       BSP_BOARD_LED_3                         /**< LED for debug purposes. */
+#define BLE_STATUS_LED                  BSP_BOARD_LED_0                         /**< blinking when device is advertising. on when device has connected. */
+#define APP_LED                         BSP_BOARD_LED_1                         /**< My App LED. */
+#define GREEN_LED                       BSP_BOARD_LED_2                         /**< Green LED. */
+#define RED_LED                         BSP_BOARD_LED_3                         /**< Red LED. */
 #define LEDBUTTON_BUTTON                BSP_BUTTON_0                            /**< Button that will trigger the notification event with the LED Button Service */
 
 #define DEVICE_NAME                     "Nordic_Blinky"                         /**< Name of device. Will be included in the advertising data. */
@@ -105,6 +106,20 @@ static uint16_t m_conn_handle = BLE_CONN_HANDLE_INVALID;                        
 static uint8_t m_adv_handle = BLE_GAP_ADV_SET_HANDLE_NOT_SET;                   /**< Advertising handle used to identify an advertising set. */
 static uint8_t m_enc_advdata[BLE_GAP_ADV_SET_DATA_SIZE_MAX];                    /**< Buffer for storing an encoded advertising set. */
 static uint8_t m_enc_scan_response_data[BLE_GAP_ADV_SET_DATA_SIZE_MAX];         /**< Buffer for storing an encoded scan data. */
+
+APP_TIMER_DEF(led_blinky_advertising_mytimer_id);
+
+/**
+ * @brief Function for starting lfclk needed by APP_TIMER.
+ */
+static void lfclk_init(void)
+{
+    uint32_t err_code;
+    err_code = nrf_drv_clock_init();
+    APP_ERROR_CHECK(err_code);
+
+    nrf_drv_clock_lfclk_request(NULL);
+}
 
 /**@brief Struct that contains pointers to the encoded advertising data. */
 static ble_gap_adv_data_t m_adv_data =
@@ -269,12 +284,12 @@ static void led_write_handler(uint16_t conn_handle, ble_lbs_t * p_lbs, uint8_t l
 {
     if (led_state)
     {
-        bsp_board_led_on(LEDBUTTON_LED);
+        bsp_board_led_on(APP_LED);
         NRF_LOG_INFO("Received LED ON!");
     }
     else
     {
-        bsp_board_led_off(LEDBUTTON_LED);
+        bsp_board_led_off(APP_LED);
         NRF_LOG_INFO("Received LED OFF!");
     }
 }
@@ -357,6 +372,23 @@ static void conn_params_init(void)
     APP_ERROR_CHECK(err_code);
 }
 
+static void ble_blinky_advertising(void)
+{
+    ret_code_t err_code;
+
+    err_code = app_timer_start(led_blinky_advertising_mytimer_id, APP_TIMER_TICKS(100), NULL);
+    APP_ERROR_CHECK(err_code);
+}
+
+static void ble_blinky_connected(void)
+{
+    ret_code_t err_code;
+
+    err_code = app_timer_stop(led_blinky_advertising_mytimer_id);
+    APP_ERROR_CHECK(err_code);
+
+    bsp_board_led_on(BLE_STATUS_LED);
+}
 
 /**@brief Function for starting advertising.
  */
@@ -367,16 +399,15 @@ static void advertising_start(void)
     err_code = sd_ble_gap_adv_start(m_adv_handle, APP_BLE_CONN_CFG_TAG);
     APP_ERROR_CHECK(err_code);
 
-    bsp_board_led_on(ADVERTISING_LED);
+    ble_blinky_advertising();
 }
-
 
 /**@brief Function for handling BLE events.
  *
  * @param[in]   p_ble_evt   Bluetooth stack event.
  * @param[in]   p_context   Unused.
  */
-static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
+static void ble_evt_handler(ble_evt_t const *p_ble_evt, void *p_context)
 {
     ret_code_t err_code;
 
@@ -384,8 +415,7 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
     {
         case BLE_GAP_EVT_CONNECTED:
             NRF_LOG_INFO("Connected");
-            bsp_board_led_on(CONNECTED_LED);
-            bsp_board_led_off(ADVERTISING_LED);
+            ble_blinky_connected();
             m_conn_handle = p_ble_evt->evt.gap_evt.conn_handle;
             err_code = nrf_ble_qwr_conn_handle_assign(&m_qwr, m_conn_handle);
             APP_ERROR_CHECK(err_code);
@@ -395,7 +425,6 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
 
         case BLE_GAP_EVT_DISCONNECTED:
             NRF_LOG_INFO("Disconnected");
-            bsp_board_led_off(CONNECTED_LED);
             m_conn_handle = BLE_CONN_HANDLE_INVALID;
             err_code = app_button_disable();
             APP_ERROR_CHECK(err_code);
@@ -491,6 +520,7 @@ static void button_event_handler(uint8_t pin_no, uint8_t button_action)
     {
         case LEDBUTTON_BUTTON:
             NRF_LOG_INFO("Send button state change.");
+            bsp_board_led_invert(GREEN_LED);
             err_code = ble_lbs_on_button_change(m_conn_handle, &m_lbs, button_action);
             if (err_code != NRF_SUCCESS &&
                 err_code != BLE_ERROR_INVALID_CONN_HANDLE &&
@@ -520,8 +550,7 @@ static void buttons_init(void)
         {LEDBUTTON_BUTTON, false, BUTTON_PULL, button_event_handler}
     };
 
-    err_code = app_button_init(buttons, ARRAY_SIZE(buttons),
-                               BUTTON_DETECTION_DELAY);
+    err_code = app_button_init(buttons, ARRAY_SIZE(buttons), BUTTON_DETECTION_DELAY);
     APP_ERROR_CHECK(err_code);
 }
 
@@ -557,15 +586,30 @@ static void idle_state_handle(void)
     }
 }
 
+static void blinky_advertising_timer_handler(void *p_context)
+{
+    bsp_board_led_invert(BLE_STATUS_LED);
+}
+
+static void create_blinky_advertising_timer()
+{
+    uint32_t err_code;
+
+    err_code = app_timer_create(&led_blinky_advertising_mytimer_id, APP_TIMER_MODE_REPEATED, blinky_advertising_timer_handler);
+    APP_ERROR_CHECK(err_code);
+}
+
 
 /**@brief Function for application main entry.
  */
 int main(void)
 {
     // Initialize.
+    lfclk_init();
     log_init();
-    leds_init();
+    leds_init();   
     timers_init();
+    create_blinky_advertising_timer();
     buttons_init();
     power_management_init();
     ble_stack_init();
@@ -579,8 +623,6 @@ int main(void)
     NRF_LOG_INFO("Blinky example started.");
     advertising_start();
     
-    //bsp_board_led_off(DEBUG_LED);
-
     // Enter main loop.
     for (;;)
     {
